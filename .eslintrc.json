@@ -1,0 +1,9 @@
+{
+  "extends": ["plugin:react/recommended", "@slikts/prettier"],
+  "rules": {
+    "no-void": "off",
+    "no-param-reassign": "off",
+    "react/prop-types": "off",
+    "no-return-assign": "off"
+  }
+}
