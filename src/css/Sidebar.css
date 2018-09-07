@@ -1,0 +1,41 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+}
+.Sidebar-group {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--border-hl2) var(--border-hl1) var(--border-hl1) var(--border-hl2);
+  margin: 10px;
+  padding: 15px 10px 10px;
+  position: relative;
+}
+
+.Sidebar-group label {
+  /* display: none; */
+  position: absolute;
+  top: -10px;
+  margin-left: -4px;
+  background: var(--bg);
+  padding: 0 4px;
+  font-weight: bold;
+}
+
+.Sidebar-group label + p,
+.Sidebar-group p:first-child {
+  margin-top: 0;
+}
+.Sidebar-group p:last-child {
+  margin-bottom: 0;
+}
+
+
+.Sidebar-score .Sidebar-group-container {
+  display: flex;
+  justify-content: center;
+  margin-left: -1em;
+}
+.Sidebar-results {
+  flex-grow: 1;
+}

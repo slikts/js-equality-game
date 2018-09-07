@@ -20,9 +20,9 @@
   vertical-align: top;
 }
 .App-menu {
-  margin-top: -5px;
   display: flex;
   user-select: none;
+  margin: 5px 5px 15px;
 }
 .App-menu li {
   margin-right: 20px;

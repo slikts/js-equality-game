@@ -1,10 +1,8 @@
 .Results {
-  --margin: 10px;
-  margin: var(--margin) 0 var(--margin) var(--margin);
+  display: flex;
+  flex-direction: column;
 }
-
 .Results-score {
-  margin: 10px 0;
   display: flex;
   justify-content: center;
 }
@@ -29,6 +27,17 @@
   display: inline-block;
 }
 
-.Results-face:before {
-  content: "🤔"
+.Results-face {
+  /* text-align: center; */
+  margin-bottom: .75em;
+  font-size: 2em;
+}
+
+.Results-controls {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+.App-results-true .Results-controls {
+  display: none;
 }

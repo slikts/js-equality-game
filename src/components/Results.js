@@ -1,46 +1,52 @@
 import * as React from "react"
 import "../css/Results.css"
 import { Consumer, total } from "../data"
-import Score from "./Score"
 
 const Results = () => (
   <Consumer>
-    {({ actions: { showResults, reset }, hits, flags, resultsVisible }) => (
-      <div className="Results">
-        <ol className="App-menu">
-          <li>
-            <a onClick={reset} href="#">
-              <span>R</span>
-              eset
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://github.com/slikts/js-equality-game"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>S</span>
-              ource
-            </a>
-          </li>
-        </ol>
-        <p>Test your mettle against JavaScript weak typing.</p>
-        <button onClick={() => showResults()}>Show Results</button>
-        <div className="Results-score">
-          <div className="Results-flags" title="Flags">
-            <Score text={String(flags)} />
-          </div>
-          <div className="Results-hits" title="Hits">
-            <Score text={resultsVisible ? hits : ``} />
-          </div>
-          <div className="Results-misses" title="Misses">
-            <Score text={resultsVisible ? total - hits : ``} />
+    {({ actions: { showResults }, hits, flags, resultsVisible }) => {
+      const wrong = Math.round(((total - hits + flags - hits) / total) * 100)
+      let msg
+      let face = `🙃`
+      if (!resultsVisible) {
+        msg = `🤔 Pending…`
+      } else if (wrong >= 100) {
+        if (wrong === 100) {
+          face = `😒`
+        } else if (wrong > 100) {
+          face = `💩`
+        }
+        msg = `${face} ${wrong}% wrong`
+      } else {
+        if (wrong >= 90) {
+          face = `😞`
+        } else if (wrong >= 80) {
+          face = `😔`
+        } else if (wrong >= 70) {
+          face = `😐`
+        } else if (wrong >= 50) {
+          face = `🙄`
+        } else if (wrong >= 30) {
+          face = `🙂`
+        } else if (wrong >= 10) {
+          face = `😅`
+        } else if (wrong >= 5) {
+          face = `😂`
+        } else if (wrong === 0) {
+          face = `🎉`
+        }
+
+        msg = `${face} ${100 - wrong}% correct`
+      }
+      return (
+        <div className="Results">
+          <div className="Results-face">{msg}</div>
+          <div className="Results-controls">
+            <button onClick={() => showResults()}>Show Results</button>
           </div>
         </div>
-        <div className="Results-face" />
-      </div>
-    )}
+      )
+    }}
   </Consumer>
 )
 

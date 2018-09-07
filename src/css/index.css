@@ -27,22 +27,15 @@ body {
   justify-content: center;
   align-items: center;
   padding: var(--padding) 0;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #5aa;
 }
 body, td, button {
   font-size: 16px;
   color: #222;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #5aa;
-}
-/* h1 {
-  font-family: var(--digital-font);
-  font-size: 24px;
-} */
 
 .box {
   border-color: var(--border-hl2);
@@ -57,4 +50,9 @@ ol, ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+code {
+  /* outline: #ccc solid 1px; */
+  background: #ccc;
 }

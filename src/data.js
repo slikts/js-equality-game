@@ -34,10 +34,7 @@ const grid = values.map(a =>
     toggled: false,
   })),
 )
-export const total = []
-  .concat(...grid)
-  .map(({ loose }) => loose)
-  .filter(x => x).length
+export const total = [].concat(...grid).filter(({ strict, loose }) => loose && !strict).length / 2
 
 const init = draft =>
   void Object.assign(draft, {

@@ -2,7 +2,7 @@ import * as React from "react"
 import "../css/App.css"
 import { Provider, Consumer } from "../data"
 import Grid from "./Grid"
-import Results from "./Results"
+import Sidebar from "./Sidebar"
 
 const App = () => (
   <Provider>
@@ -12,7 +12,7 @@ const App = () => (
           <h1 className="App-title">🤓 JavaScript Equality Table Game</h1>
           <div className="App-contents">
             <Grid resultsVisible={resultsVisible} />
-            <Results />
+            <Sidebar />
           </div>
         </div>
       )}
