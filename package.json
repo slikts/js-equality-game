@@ -2,6 +2,7 @@
   "name": "equality-quiz-js",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://slikts.github.io/js-equality-game",
   "dependencies": {
     "immer-wieder": "^1.1.4",
     "react": "^16.4.2",
