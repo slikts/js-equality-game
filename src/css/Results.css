@@ -28,3 +28,7 @@
 .Score {
   display: inline-block;
 }
+
+.Results-face:before {
+  content: "🤔"
+}

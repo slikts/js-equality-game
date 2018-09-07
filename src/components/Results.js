@@ -5,26 +5,40 @@ import Score from "./Score"
 
 const Results = () => (
   <Consumer>
-    {({ actions: { showResults, reset }, hits, misses, flags, resultsVisible }) => (
+    {({ actions: { showResults, reset }, hits, flags, resultsVisible }) => (
       <div className="Results">
-        {/* <h1>JS Equality Table Game</h1> */}
-        <p>Lorem ipsum dolor sit amet pipsum.</p>
+        <ol className="App-menu">
+          <li>
+            <a onClick={reset} href="#">
+              <span>R</span>
+              eset
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://github.com/slikts/js-equality-game"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>S</span>
+              ource
+            </a>
+          </li>
+        </ol>
+        <p>Test your mettle against JavaScript weak typing.</p>
         <button onClick={() => showResults()}>Show Results</button>
-        <button onClick={() => reset()}>Reset</button>
         <div className="Results-score">
-          <div className="Results-flags">
-            <label>Flags</label>
+          <div className="Results-flags" title="Flags">
             <Score text={String(flags)} />
           </div>
-          <div className="Results-hits">
-            <label>Hits</label>
+          <div className="Results-hits" title="Hits">
             <Score text={resultsVisible ? hits : ``} />
           </div>
-          <div className="Results-misses">
-            <label>Misses</label>
+          <div className="Results-misses" title="Misses">
             <Score text={resultsVisible ? total - hits : ``} />
           </div>
         </div>
+        <div className="Results-face" />
       </div>
     )}
   </Consumer>

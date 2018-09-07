@@ -9,7 +9,7 @@ const App = () => (
     <Consumer>
       {({ resultsVisible }) => (
         <div className={`App App-results-${resultsVisible}`}>
-          <h1 className="App-title">JavaScript Equality Table Game</h1>
+          <h1 className="App-title">🤓 JavaScript Equality Table Game</h1>
           <div className="App-contents">
             <Grid resultsVisible={resultsVisible} />
             <Results />

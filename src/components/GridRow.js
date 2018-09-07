@@ -8,7 +8,7 @@ const GridRow = ({ cells, y }) => (
       <div>{values[y].name}</div>
     </th>
     {cells.map(({ a, b, loose, strict, toggled }, x) => (
-      <td key={`${x}-${y}`} title={`${a.name} == ${b.name}`}>
+      <td key={`${x}-${y}`} title={`${a.name} ==${strict ? `=` : ``} ${b.name}`}>
         <div className={`Cell Cell-loose-${loose} Cell-strict-${strict}`}>
           <CellContent toggled={toggled} />
           <CellControl x={x} y={y} />

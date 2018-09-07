@@ -8,8 +8,38 @@
 .App-title {
   background: #00f;
   color: #fff;
-  padding: .2em;
-  margin: 2px;
+  padding: .2em 0 0 1px;
+  margin: 2px 2px 0;
   font-weight: bold;
   font-size: 16px;
+  cursor: default;
+  user-select: none;
+  --height: 1.5em;
+  height: var(--height);
+  line-height: 1.25em;
+  vertical-align: top;
+}
+.App-menu {
+  margin-top: -5px;
+  display: flex;
+  user-select: none;
+}
+.App-menu li {
+  margin-right: 20px;
+}
+.App-menu span {
+  text-decoration: underline;
+}
+.App-menu a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.App-menu a:hover {
+  text-decoration: underline;
+}
+.App-menu a:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
 }

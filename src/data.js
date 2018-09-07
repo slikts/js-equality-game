@@ -77,7 +77,10 @@ export const { Provider, Consumer } = createContext(setState =>
             draft.misses += !toggled ? 1 : -1
           }
         }),
-      reset: () => void setState(init),
+      reset: e => {
+        e.preventDefault()
+        setState(init)
+      },
     },
   }),
 )
