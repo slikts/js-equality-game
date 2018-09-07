@@ -22,6 +22,10 @@
   vertical-align: bottom;
   padding-top: 10px;
   line-height: 2em;
+  height: 90px;
+}
+.Grid thead th {
+  height: 0;
 }
 code,
 .Grid th {
