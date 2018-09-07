@@ -1,0 +1,6 @@
+.App {
+  font-size: 16px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: row-reverse;
+}

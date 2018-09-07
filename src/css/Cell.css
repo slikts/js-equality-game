@@ -1,0 +1,89 @@
+
+.Cell {
+  width: 2em;
+  height: 2em;
+  position: relative;
+  background: var(--bg);
+  text-align: center;
+}
+.CellContent {
+  display: block;
+  line-height: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.CellControl {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  display: block;
+  background: transparent;
+  cursor: pointer;
+}
+.CellControl:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: var(--cell-border);
+  left: var(--cell-border);
+  width: calc(100% - var(--cell-border) * 2);
+  height: calc(100% - var(--cell-border) * 2);
+}
+.CellControl:hover:before {
+  background: rgba(255, 255, 255, .25);
+}
+.CellControl:active:before {
+  background: rgba(0, 0, 0, .075);
+  outline: solid 2px var(--bg2);
+}
+
+
+.App-results-true .CellControl {
+  display: none;
+}
+.Cell-strict-true .CellContent,
+.App-results-true .CellContent-on-true {
+  border-color: var(--border-hl2);
+  border-width: 1px;
+  border-style: none solid solid none;
+}
+
+.CellContent:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.App-results-true .Cell-loose-true:not(.Cell-strict-true) .CellContent:before {
+  content: "❌";
+  color: red;
+}
+
+.App-results-true .Cell-loose-true .CellContent-on-true:before,
+.Cell-strict-true .CellContent:before {
+  color: green;
+  content: "✔️" !important;
+}
+.Cell-strict-true .CellControl {
+  display: none;
+}
+
+.App,
+.CellContent {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--border-hl1) var(--border-hl2) var(--border-hl2) var(--border-hl1);
+}
+.App-results-false .Cell:not(.Cell-strict-true) .CellContent-on-true:before {
+  content: "🚩";
+}

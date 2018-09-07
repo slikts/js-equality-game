@@ -1,0 +1,41 @@
+:root {
+  --border-hl1: #fff;
+  --border-hl2: #808080;
+  --bg: #c0c0c0;
+  --bg2: #adadad;
+  --cell-border: 2px;
+  --cell-border2: 2px;
+  --border-dark: rgba(255, 255, 255, .25);
+  --padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+html, body {
+  min-height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding) 0;
+}
+body, td {
+  color: #222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #5aa;
+}
+
+h1 {
+  font-family: Orbitron, sans-serif;
+  font-size: 24px;
+}

@@ -5,5 +5,8 @@
     "no-param-reassign": "off",
     "react/prop-types": "off",
     "no-return-assign": "off"
+  },
+  "env": {
+    "browser": true
   }
 }

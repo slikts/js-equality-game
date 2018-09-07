@@ -1,0 +1,46 @@
+.Grid {
+  border-collapse: collapse;
+  border-spacing: 0;
+  white-space: nowrap;
+  --margin: 10px;
+  margin: 0 var(--margin) var(--margin) 0;
+}
+.Grid th:first-child {
+  width: 100px;
+  text-align: right;
+}
+.Grid thead div {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  text-align: right;
+  height: 100px;
+  white-space: normal;
+  line-height: 2em;
+}
+.Grid th {
+  padding: 0;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+.Grid td {
+  padding: 0;
+  user-select: none;
+}
+
+.Grid thead th:first-child {
+  border-style: none;
+}
+.Grid th:first-child {
+  border-right: var(--cell-border2) solid var(--border-hl2);
+  padding-right: 4px;
+}
+.Grid thead th {
+  border-bottom: var(--cell-border2) solid var(--border-hl2);
+  padding-bottom: 4px;
+}
+.Grid td:last-child {
+  border-right: var(--cell-border2) solid var(--border-hl1);
+}
+.Grid tr:last-child td {
+  border-bottom: var(--cell-border2) solid var(--border-hl1);
+}
+

@@ -1,0 +1,4 @@
+.Results {
+  --margin: 10px;
+  margin: var(--margin) 0 var(--margin) var(--margin);
+}
