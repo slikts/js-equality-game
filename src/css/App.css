@@ -1,6 +1,15 @@
 .App {
-  font-size: 16px;
   background: var(--bg);
+}
+.App-contents {
   display: flex;
   flex-direction: row-reverse;
+}
+.App-title {
+  background: #00f;
+  color: #fff;
+  padding: .2em;
+  margin: 2px;
+  font-weight: bold;
+  font-size: 16px;
 }

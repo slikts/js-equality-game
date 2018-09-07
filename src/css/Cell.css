@@ -1,4 +1,3 @@
-
 .Cell {
   width: 2em;
   height: 2em;
@@ -38,6 +37,7 @@
   width: calc(100% - var(--cell-border) * 2);
   height: calc(100% - var(--cell-border) * 2);
 }
+button:hover,
 .CellControl:hover:before {
   background: rgba(255, 255, 255, .25);
 }
@@ -65,25 +65,45 @@
   height: 100%;
 }
 .App-results-true .Cell-loose-true:not(.Cell-strict-true) .CellContent:before {
-  content: "❌";
+  content: var(--no);
   color: red;
 }
 
 .App-results-true .Cell-loose-true .CellContent-on-true:before,
 .Cell-strict-true .CellContent:before {
   color: green;
-  content: "✔️" !important;
+  content: var(--yes) !important;
 }
 .Cell-strict-true .CellControl {
   display: none;
 }
 
+button,
 .App,
 .CellContent {
   border-style: solid;
   border-width: 2px;
   border-color: var(--border-hl1) var(--border-hl2) var(--border-hl2) var(--border-hl1);
 }
+:root {
+  --button-padding-x: 8px;
+  --button-padding-y: 2px;
+}
+button {
+  background: var(--bg);
+  cursor: pointer;
+  outline: none;
+  padding: var(--button-padding-y) var(--button-padding-x);
+  font-size: 18px;
+}
+button:active {
+  border-style: solid;
+  border-width: 1px;
+  padding: calc(var(--button-padding-y) + 1px) calc(var(--button-padding-x) + 1px);
+  border-color: var(--border-hl1) var(--border-hl2) var(--border-hl2) var(--border-hl1);
+  background: var(--bg);
+}
+
 .App-results-false .Cell:not(.Cell-strict-true) .CellContent-on-true:before {
-  content: "🚩";
+  content: var(--flag);
 }

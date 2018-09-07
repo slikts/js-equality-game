@@ -2,3 +2,29 @@
   --margin: 10px;
   margin: var(--margin) 0 var(--margin) var(--margin);
 }
+
+.Results-score {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Results-hits:before {
+  content: var(--yes);
+}
+
+.Results-misses:before {
+  content: var(--no);
+}
+
+.Results-flags:before {
+  content: var(--flag);
+}
+
+.Results label {
+  display: none;
+}
+
+.Score {
+  display: inline-block;
+}

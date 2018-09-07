@@ -7,6 +7,10 @@
   --cell-border2: 2px;
   --border-dark: rgba(255, 255, 255, .25);
   --padding: 20px;
+  --digital-font: Orbitron, sans-serif;
+  --yes: "✔️";
+  --no: "❌";
+  --flag: "🚩";
 }
 * {
   box-sizing: border-box;
@@ -24,7 +28,8 @@ body {
   align-items: center;
   padding: var(--padding) 0;
 }
-body, td {
+body, td, button {
+  font-size: 16px;
   color: #222;
 }
 
@@ -34,8 +39,16 @@ body {
   font-family: sans-serif;
   background: #5aa;
 }
-
-h1 {
-  font-family: Orbitron, sans-serif;
+/* h1 {
+  font-family: var(--digital-font);
   font-size: 24px;
+} */
+
+.box {
+  border-color: var(--border-hl2);
+  border-width: 1px;
+  border-style: none solid solid none;
+}
+button {
+  user-select: none;
 }
