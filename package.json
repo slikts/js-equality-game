@@ -1,5 +1,5 @@
 {
-  "name": "equality-quiz-js",
+  "name": "equality-quiz",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://slikts.github.io/js-equality-game",
@@ -23,5 +23,24 @@
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.2"
+  },
+  "description": "The worst minesweeper ever",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/slikts/js-equality-quiz.git"
+  },
+  "keywords": [
+    "equality",
+    "game",
+    "javascript",
+    "quiz",
+    "react",
+    "immer"
+  ],
+  "author": "slikts <dabas@untu.ms>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/slikts/js-equality-quiz/issues"
   }
 }
