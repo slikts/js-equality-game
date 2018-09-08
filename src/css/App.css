@@ -22,7 +22,7 @@
 .App-menu {
   display: flex;
   user-select: none;
-  margin: 5px 5px 15px;
+  margin: 5px 10px 15px;
 }
 .App-menu li {
   margin-right: 20px;

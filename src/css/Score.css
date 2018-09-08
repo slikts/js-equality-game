@@ -9,6 +9,7 @@
   text-align: center;
   padding: 0 .2em;
   user-select: none;
+  cursor: default;
 }
 
 .Letters {
