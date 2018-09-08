@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "JS Equality Game",
+  "name": "JavaScript Equality Table Game",
   "icons": [
     {
       "src": "favicon.ico",
