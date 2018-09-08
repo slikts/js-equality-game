@@ -35,7 +35,6 @@ const Results = () => (
         } else if (wrong === 0) {
           face = `🎉`
         }
-
         msg = `${face} ${100 - wrong}% correct`
       }
       return (

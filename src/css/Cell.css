@@ -1,9 +1,10 @@
 .Cell {
-  width: 2em;
-  height: 2em;
+  width: var(--cell-size);
+  height: var(--cell-size);
   position: relative;
   background: var(--bg);
   text-align: center;
+  cursor: default;
 }
 .CellContent {
   display: block;
@@ -16,7 +17,6 @@
 }
 .CellControl {
   position: absolute;
-  box-sizing: border-box;
   padding: 0;
   width: 100%;
   height: 100%;

@@ -11,6 +11,7 @@
   --yes: "✔️";
   --no: "❌";
   --flag: "🚩";
+  --cell-size: 32px;
 }
 * {
   box-sizing: border-box;
@@ -53,6 +54,5 @@ ol, ul, li {
 }
 
 code {
-  /* outline: #ccc solid 1px; */
   background: #ccc;
 }

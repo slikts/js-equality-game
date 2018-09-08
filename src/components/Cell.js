@@ -3,10 +3,7 @@ import "../css/Cell.css"
 import { Consumer } from "../data"
 
 export const CellContent = ({ toggled }) => (
-  <div className={`CellContent CellContent-on-${toggled}`}>
-    &nbsp;
-    <div className="container" />
-  </div>
+  <div className={`CellContent CellContent-on-${toggled}`}>&nbsp;</div>
 )
 
 export const CellControl = ({ x, y }) => (

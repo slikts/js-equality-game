@@ -1,14 +1,15 @@
+:root {
+  --col1-width: 100px;
+}
 .Grid {
   border-collapse: collapse;
   border-spacing: 0;
   white-space: nowrap;
+}
+.Grid-wrapper {
   --margin: 10px;
   margin: 0 var(--margin) var(--margin) 0;
-}
-.Grid th:first-child {
-  /* width: 90px; */
-  padding-left: 10px;
-  text-align: right;
+  position: relative;
 }
 .Grid thead {
   text-align: right;
@@ -24,9 +25,6 @@
   line-height: 2em;
   height: 90px;
 }
-.Grid thead th {
-  height: 0;
-}
 code,
 .Grid th {
   padding: 0;
@@ -40,10 +38,12 @@ code,
 .Grid thead th:first-child {
   border-style: none;
 }
-.Grid th:first-child {
+.Grid tbody th {
+  text-align: right;
   border-right: var(--cell-border2) solid var(--border-hl2);
   padding-right: 4px;
 }
+
 .Grid thead th {
   border-bottom: var(--cell-border2) solid var(--border-hl2);
   padding-bottom: 4px;
@@ -55,3 +55,16 @@ code,
   border-bottom: var(--cell-border2) solid var(--border-hl1);
 }
 
+.Grid-ruler {
+  position: absolute;
+  display: none;
+  border: 1px dotted #000;
+}
+.Grid-ruler-x {
+  left: 0;
+  height: var(--cell-size);
+}
+.Grid-ruler-y {
+  top: 0;
+  width: var(--cell-size);
+}
