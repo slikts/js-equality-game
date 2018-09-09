@@ -14,6 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  font-size: calc(var(--cell-size) / 1.875);
 }
 .CellControl {
   position: absolute;
