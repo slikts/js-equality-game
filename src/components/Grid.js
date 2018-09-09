@@ -17,15 +17,10 @@ const move = e => {
     rulerX.style.display = `none`
     return
   }
-  const width =
-    Math.min(values.length - 1, Math.floor((e.clientX - cellRect.left) / cellRect.width)) *
-      cellRect.width +
-    100
-  const height =
-    Math.min(values.length - 1, Math.floor((e.clientY - cellRect.top) / cellRect.height)) *
-      cellRect.height +
-    cellRect.top -
-    gridRect.top
+  const x = Math.min(values.length - 1, Math.floor((e.clientX - cellRect.left) / cellRect.width))
+  const width = x * cellRect.width + 100
+  const y = Math.min(values.length - 1, Math.floor((e.clientY - cellRect.top) / cellRect.height))
+  const height = y * cellRect.height + cellRect.top - gridRect.top
 
   rulerX.style.display = `block`
   rulerX.style.width = `${width}px`
@@ -70,6 +65,7 @@ const Grid = () => (
     </table>
     <div className="Grid-ruler Grid-ruler-x" />
     <div className="Grid-ruler Grid-ruler-y" />
+    <div className="Grid-tooltip" />
   </div>
 )
 

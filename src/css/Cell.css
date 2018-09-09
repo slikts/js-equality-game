@@ -107,3 +107,21 @@ button:active {
 .App-results-false .Cell:not(.Cell-strict-true) .CellContent-on-true:before {
   content: var(--flag);
 }
+
+.Cell-tooltip {
+  background: #fff;
+  position: absolute;
+  top: calc(100% + 10px);
+  z-index: 100;
+  display: none;
+  padding: 4px 6px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  font-family: var(--monospace);
+}
+.Cell:hover .Cell-tooltip {
+  display: block;
+}
+.Cell .Cell-tooltip:hover {
+  display: none;
+}
