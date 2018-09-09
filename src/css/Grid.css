@@ -59,9 +59,11 @@ code,
 }
 .Grid-ruler-x {
   left: 0;
-  height: var(--cell-size);
+  height: calc(var(--cell-size) + 1px);
+  border-right-style: none;
 }
 .Grid-ruler-y {
   top: 0;
-  width: var(--cell-size);
+  width: calc(var(--cell-size) + 1px);
+  border-bottom-style: none;
 }

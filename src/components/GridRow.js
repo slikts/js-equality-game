@@ -9,10 +9,12 @@ const GridRow = ({ cells, y }) => (
     </th>
     {cells.map(({ a, b, loose, strict, toggled }, x) => (
       <td key={`${x}-${y}`}>
-        <div className={`Cell Cell-loose-${loose} Cell-strict-${strict}`}>
+        <div
+          className={`Cell Cell-loose-${loose} Cell-strict-${strict}`}
+          data-tooltip={`${a.name} ==${strict ? `=` : ``} ${b.name}`}
+        >
           <CellContent toggled={toggled} />
           <CellControl x={x} y={y} />
-          <div className="Cell-tooltip">{`${a.name} ==${strict ? `=` : ``} ${b.name}`}</div>
         </div>
       </td>
     ))}

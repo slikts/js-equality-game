@@ -24,7 +24,7 @@ const move = e => {
 
   rulerX.style.display = `block`
   rulerX.style.width = `${width}px`
-  rulerX.style.top = `${height}px`
+  rulerX.style.top = `${height - 1}px`
 
   rulerY.style.display = `block`
   rulerY.style.left = `${width}px`
