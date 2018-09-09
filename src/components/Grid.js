@@ -21,7 +21,7 @@ const move = e => {
     return
   }
   const x = Math.min(values.length - 1, Math.floor((e.clientX - cellRect.left) / cellRect.width))
-  const width = x * cellRect.width + 100
+  const width = x * cellRect.width + (cellRect.left - gridRect.left - 1)
   const y = Math.min(values.length - 1, Math.floor((e.clientY - cellRect.top) / cellRect.height))
   const height = y * cellRect.height + cellRect.top - gridRect.top
   rulerX.style.display = `block`

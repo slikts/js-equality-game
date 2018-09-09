@@ -41,7 +41,9 @@ const Results = () => (
         <div className="Results">
           <div className="Results-face">{msg}</div>
           <div className="Results-controls">
-            <button onClick={() => showResults()}>Show Results</button>
+            <button onClick={() => showResults()} disabled={resultsVisible}>
+              Show Results
+            </button>
           </div>
         </div>
       )

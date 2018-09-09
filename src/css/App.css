@@ -1,6 +1,7 @@
 .App {
   background: var(--bg);
   width: var(--app-width);
+  margin: 10px 0;
 }
 .App-contents {
   display: flex;

@@ -58,3 +58,42 @@ ol, ul, li {
 code {
   background: #ccc;
 }
+
+@media (max-width: 1100px) { 
+  :root {
+    --app-width: calc(110px + (var(--cell-size) * 21));
+  }
+  .App .App-contents {
+    flex-direction: column-reverse;
+  }
+  .App .Sidebar {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .App .Sidebar-score .Sidebar-group-container {
+    margin-left: 0;
+  }
+  /* 
+  .App .Sidebar-groupset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .Sidebar-results {
+  }
+  .Sidebar-about {
+    width: 300px;
+  }
+  .App .Sidebar-score {
+    flex-grow: 0;
+  }
+  .App .Sidebar-score .Sidebar-group-container {
+    flex-direction: column;
+    margin-left: 0;
+  } */
+}
+/* @media (max-width: 400px) { 
+  :root {
+    --cell-size: 15px;
+  }
+} */
