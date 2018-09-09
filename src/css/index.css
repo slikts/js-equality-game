@@ -13,7 +13,8 @@
   --flag: "🚩";
   --cell-size: 30px;
   --monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-  --app-width: calc(450px + (var(--cell-size) * 21));
+  --cols: 21;
+  --app-width: calc(450px + (var(--cell-size) * var(--cols)));
 }
 * {
   box-sizing: border-box;
@@ -70,7 +71,7 @@ code {
 }
 @media (max-width: 1000px) { 
   :root {
-    --app-width: calc(110px + (var(--cell-size) * 21));
+    --app-width: calc(110px + (var(--cell-size) * var(--cols)));
     --cell-size: 30px;
   }
   .App .App-contents {

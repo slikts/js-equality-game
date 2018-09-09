@@ -26,6 +26,7 @@ code,
 .Grid th {
   padding: 0;
   font-family: var(--monospace);
+  cursor: default;
 }
 .Grid th {
   line-height: var(--cell-size);
