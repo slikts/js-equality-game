@@ -39,7 +39,11 @@
 }
 button:hover,
 .CellControl:hover:before {
-  background: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, .25);
+}
+button,
+.CellControl:before {
+  transition: background-color .025s ease-in-out;
 }
 .CellControl:active:before {
   background: rgba(0, 0, 0, .075);
