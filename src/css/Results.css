@@ -39,9 +39,7 @@
   align-items: stretch;
   flex-direction: column;
 }
-/* .App-results-true .Results-controls {
-  display: none;
-} */
+
 .App-results-true .Cell-strict-true .CellContent:before {
   opacity: .35;
 }

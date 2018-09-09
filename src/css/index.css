@@ -58,10 +58,20 @@ ol, ul, li {
 code {
   background: #ccc;
 }
-
-@media (max-width: 1100px) { 
+@media (min-width: 1500px) and (min-height: 800px) {
+  :root {
+    --cell-size: 35px;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    --cell-size: 26px;
+  }
+}
+@media (max-width: 1000px) { 
   :root {
     --app-width: calc(110px + (var(--cell-size) * 21));
+    --cell-size: 30px;
   }
   .App .App-contents {
     flex-direction: column-reverse;
@@ -73,27 +83,15 @@ code {
   .App .Sidebar-score .Sidebar-group-container {
     margin-left: 0;
   }
-  /* 
-  .App .Sidebar-groupset {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .Sidebar-results {
-  }
-  .Sidebar-about {
-    width: 300px;
-  }
-  .App .Sidebar-score {
-    flex-grow: 0;
-  }
-  .App .Sidebar-score .Sidebar-group-container {
-    flex-direction: column;
-    margin-left: 0;
-  } */
 }
-/* @media (max-width: 400px) { 
+@media (max-width: 700px) { 
   :root {
-    --cell-size: 15px;
+    --app-width: calc(100vw - 20px);
+    --cell-size: 24px;
   }
-} */
+}
+@media (max-width: 400px) { 
+  :root {
+    --cell-size: 12px;
+  }
+}
