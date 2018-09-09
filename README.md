@@ -5,6 +5,7 @@
 * Inspired by [JavaScript Equality Table][table]
 * [Discussion about value order][reorder]
 * [Weak typing][wikipedia] in Wikipedia
+* [Visual explanation][visual]
 
 ## Trivia
 
@@ -21,3 +22,4 @@ The initial reason to make this game was to try out state management with [immer
 [reorder]: http://algassert.com/visualization/2014/03/27/Better-JS-Equality-Table.html
 [wieder]: https://github.com/drcmda/immer-wieder
 [getify]: https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#converting-between-types
+[visual]: https://i.imgur.com/rWoBHj4.png
