@@ -1,7 +1,6 @@
 .Sidebar {
   display: flex;
   flex-direction: column;
-  max-width: 330px;
 }
 .Sidebar-group {
   border-style: solid;

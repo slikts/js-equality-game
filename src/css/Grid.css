@@ -7,6 +7,7 @@
   --margin: 10px;
   margin: 0 var(--margin) var(--margin) 0;
   position: relative;
+  flex-shrink: 0;
 }
 .Grid thead {
   text-align: right;
@@ -19,7 +20,7 @@
   text-align: right;
   vertical-align: bottom;
   padding-top: 10px;
-  line-height: 2em;
+  line-height: var(--cell-size);
   height: 90px;
 }
 code,
@@ -66,4 +67,13 @@ code,
   top: 0;
   width: calc(var(--cell-size) + 1px);
   border-bottom-style: none;
+}
+
+.Grid-tooltip {
+  background: #fff;
+  position: absolute;
+  padding: 4px 6px;
+  font-family: var(--monospace);
+  white-space: nowrap;
+  cursor: default;
 }
