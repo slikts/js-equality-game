@@ -50,18 +50,22 @@ const applyInit = o => {
   return o
 }
 
-const context = new AudioContext()
-
-const sound = (frequency, type) => {
-  const oscillator = context.createOscillator()
-  const gain = context.createGain()
-  gain.gain.value = 0.01
-  oscillator.type = type
-  oscillator.connect(gain)
-  oscillator.frequency.value = frequency
-  gain.connect(context.destination)
-  oscillator.start(0)
-  gain.gain.exponentialRampToValueAtTime(0.00001, context.currentTime + 0.01)
+let sound
+if (window.AudioContext) {
+  const context = new AudioContext()
+  sound = (frequency, type) => {
+    const oscillator = context.createOscillator()
+    const gain = context.createGain()
+    gain.gain.value = 0.01
+    oscillator.type = type
+    oscillator.connect(gain)
+    oscillator.frequency.value = frequency
+    gain.connect(context.destination)
+    oscillator.start(0)
+    gain.gain.exponentialRampToValueAtTime(0.00001, context.currentTime + 0.01)
+  }
+} else {
+  sound = () => {}
 }
 
 export const { Provider, Consumer } = createContext(setState =>
