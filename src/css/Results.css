@@ -9,10 +9,12 @@
 }
 
 .Results-hits:before {
+  color: green;
   content: var(--yes);
 }
 
 .Results-misses:before {
+  color: red;
   content: var(--no);
 }
 
