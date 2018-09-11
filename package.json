@@ -14,7 +14,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "cd ../eq-gh-pages; git rm -rf .; cp -R ../equality-quiz-js/build/* .; git add .; git commit -m upd; git push"
   },
   "devDependencies": {
     "@slikts/eslint-config-prettier": "^5.1.0",
