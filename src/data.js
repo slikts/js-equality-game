@@ -23,14 +23,14 @@ export const values = [
   `[0]`,
   `[1]`,
   `NaN`,
-].map(name => ({ name, value: new Function(`return ${name}`)() }))
+].map(name => ({ name, value: () => new Function(`return ${name}`)() }))
 
 const grid = values.map(a =>
   values.map(b => ({
     a,
     b,
-    loose: a.value == b.value,
-    strict: a.value === b.value,
+    loose: a.value() == b.value(),
+    strict: a.value() === b.value(),
     toggled: false,
   })),
 )

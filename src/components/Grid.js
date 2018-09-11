@@ -33,9 +33,9 @@ const move = e => {
   rulerY.style.height = `${height}px`
 
   const { clientHeight, clientWidth } = document.documentElement
-  tooltip.textContent = `${values[x].name} ${values[x].value === values[y].value ? `===` : `==`} ${
-    values[y].name
-  }`
+  tooltip.textContent = `${values[x].name} ${
+    values[x].value() === values[y].value() ? `===` : `==`
+  } ${values[y].name}`
   tooltip.style.display = `block`
   tooltip.style.right = `${Math.max(
     -(clientWidth - gridRect.right),
