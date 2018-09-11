@@ -18,10 +18,10 @@ const Sidebar = () => (
             design&nbsp;flaw.
           </p>
           <p>
-            Mark all cells where the values are loosely equal according to <code>==</code>. The
+            Flag all cells where the values are loosely equal according to <code>==</code>. The
             cells that are strictly equal are already&nbsp;revealed.
           </p>
-          <p>The table is diagonally symmetrical, so only one side needs to be&nbsp;marked.</p>
+          <p>The table is diagonally symmetrical, so only one side needs to be&nbsp;flagged.</p>
           <p>Wrong guesses count against the final&nbsp;score.</p>
         </div>
         <div className="Sidebar-group Sidebar-score">
