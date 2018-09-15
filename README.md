@@ -1,6 +1,6 @@
 # JavaScript Equality Table Game…
 
-…or why you should prefer the `===` operator".
+…or why you should prefer the `===` operator.
 
 * Inspired by [JavaScript Equality Table][table]
 * [Discussion about value order][reorder]
