@@ -15,6 +15,7 @@
   --monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   --cols: 21;
   --app-width: calc(450px + (var(--cell-size) * var(--cols)));
+  --bg-hl: rgba(255, 255, 255, .15);
 }
 * {
   box-sizing: border-box;

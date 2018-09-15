@@ -12,7 +12,6 @@
 }
 
 .Sidebar-group label {
-  /* display: none; */
   position: absolute;
   top: -10px;
   margin-left: -4px;
@@ -37,4 +36,24 @@
 }
 .Sidebar-results {
   flex-grow: 1;
+}
+
+
+.Sidebar-math > span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Sidebar-math > span span:first-child {
+  border-bottom: 1px solid;
+}
+.Sidebar-math {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  font-style: italic;
+  background: var(--bg-hl);
+  padding: 10px;
+  margin-top: -10px;
 }

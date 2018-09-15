@@ -8,6 +8,7 @@ const Results = () => (
       const wrong = Math.round(((total - hits + flags - hits) / total) * 100)
       let msg
       let face = `🙃`
+      let title = ``
       if (!resultsVisible) {
         msg = `🤔 Pending…`
       } else if (wrong >= 100) {
@@ -17,6 +18,7 @@ const Results = () => (
           face = `💩`
         }
         msg = `${face} ${wrong}% wrong`
+        title = `((${flags} - ${hits} + ${total - hits}) / ${total}) * 100 = ${wrong}% wrong`
       } else {
         if (wrong >= 90) {
           face = `😞`
@@ -36,10 +38,14 @@ const Results = () => (
           face = `🎉`
         }
         msg = `${face} ${100 - wrong}% correct`
+        title = `100 - ((${flags} - ${hits} + ${total - hits}) / ${total}) * 100 = ${100 -
+          wrong}% correct`
       }
       return (
         <div className="Results">
-          <div className="Results-face">{msg}</div>
+          <div className="Results-face" title={title}>
+            {msg}
+          </div>
           <div className="Results-controls">
             <button onClick={() => showResults()} disabled={resultsVisible}>
               Show Results

@@ -22,7 +22,13 @@ const Sidebar = () => (
             cells that are strictly equal are already&nbsp;revealed.
           </p>
           <p>The table is diagonally symmetrical, so only one side needs to be&nbsp;flagged.</p>
-          <p>Wrong guesses count against the final&nbsp;score.</p>
+          <p>Wrong guesses count against the final&nbsp;score:</p>
+          <p className="Sidebar-math">
+            wrongness =&nbsp;
+            <span>
+              <span>flags - hits + misses</span> <span>max hits</span>
+            </span>
+          </p>
         </div>
         <div className="Sidebar-group Sidebar-score">
           <label>Score</label>
