@@ -19,7 +19,7 @@ The initial reason to make this game was to try out state management with [immer
 
 ## Emojis
 
-The game uses emojis; your system and browser needs to support [color fonts] and have an emoji font like [EmojiOne] installed for the emojis to display properly.
+The game uses emojis; your system and browser needs to support [color fonts] and have an emoji font like [EmojiOne] or [Noto Color Emoji] installed for the emojis to display properly.
 
 [table]: https://github.com/dorey/Javascript-Equality-Table/
 [wikipedia]: https://en.wikipedia.org/wiki/Strong_and_weak_typing
@@ -29,3 +29,4 @@ The game uses emojis; your system and browser needs to support [color fonts] and
 [visual]: https://i.imgur.com/rWoBHj4.png
 [color fonts]: https://www.colorfonts.wtf/
 [EmojiOne]: https://www.emojione.com/
+[Noto Color Emoji]: https://www.google.com/get/noto/help/emoji/
