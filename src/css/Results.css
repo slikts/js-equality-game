@@ -38,6 +38,9 @@
   padding: 10px;
   margin-bottom: 10px;
 }
+.App-results-true .Results-face {
+  cursor: help;
+}
 
 .Results-controls {
   display: flex;
