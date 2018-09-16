@@ -8,6 +8,8 @@
 * [Weak typing][wikipedia] in Wikipedia
 * [Visual explanation][visual]
 
+## Screenshot
+
 [![Screenshot]][game]
 
 ## Trivia
@@ -22,7 +24,7 @@ The initial reason to make this game was to try out state management with [immer
 
 ## Emojis
 
-The game uses emojis; your system and browser needs to support [color fonts] and have an emoji font like [EmojiOne] or [Noto Color Emoji] installed for the emojis to display properly.
+The game uses emojis; your system and browser should preferably support [color fonts] and have an emoji font like [EmojiOne] or [Noto Color Emoji] installed for the emojis to display properly. If not, the game will provide fallback SVG images from [emojitwo] (using [emoji-extractor]).
 
 [table]: https://github.com/dorey/Javascript-Equality-Table/
 [wikipedia]: https://en.wikipedia.org/wiki/Strong_and_weak_typing
@@ -35,3 +37,5 @@ The game uses emojis; your system and browser needs to support [color fonts] and
 [Noto Color Emoji]: https://www.google.com/get/noto/help/emoji/
 [screenshot]: https://i.imgur.com/VFToyHp.png
 [game]: https://slikts.github.io/js-equality-game/
+[emojitwo]: https://emojitwo.github.io/
+[emoji-extractor]: https://github.com/slikts/emoji-extractor
