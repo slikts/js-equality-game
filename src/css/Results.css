@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
 }
+.Results-wrapper,
 .App-results-true .Results-face {
   cursor: help;
 }
