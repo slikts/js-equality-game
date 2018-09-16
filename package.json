@@ -1,6 +1,6 @@
 {
   "name": "equality-quiz",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://slikts.github.io/js-equality-game",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
