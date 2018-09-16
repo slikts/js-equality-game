@@ -2,12 +2,13 @@
 
 …or why you should prefer the `===` operator.
 
+* [**Play the game**][game]
 * Inspired by [JavaScript Equality Table][table]
 * [Discussion about value order][reorder]
 * [Weak typing][wikipedia] in Wikipedia
 * [Visual explanation][visual]
 
-![Screenshot]
+[![Screenshot]][game]
 
 ## Trivia
 
@@ -33,3 +34,4 @@ The game uses emojis; your system and browser needs to support [color fonts] and
 [EmojiOne]: https://www.emojione.com/
 [Noto Color Emoji]: https://www.google.com/get/noto/help/emoji/
 [screenshot]: https://i.imgur.com/VFToyHp.png
+[game]: https://slikts.github.io/js-equality-game/
