@@ -7,6 +7,8 @@
 * [Weak typing][wikipedia] in Wikipedia
 * [Visual explanation][visual]
 
+![Screenshot]
+
 ## Trivia
 
 Brendan Eich was asked to add the loose equality checking rules by a coworker in Netscape and considers it a mistake.<sup>[citation needed]</sup>
@@ -30,3 +32,4 @@ The game uses emojis; your system and browser needs to support [color fonts] and
 [color fonts]: https://www.colorfonts.wtf/
 [EmojiOne]: https://www.emojione.com/
 [Noto Color Emoji]: https://www.google.com/get/noto/help/emoji/
+[screenshot]: https://i.imgur.com/64zRrzn.png
