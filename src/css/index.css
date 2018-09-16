@@ -16,6 +16,7 @@
   --cols: 21;
   --app-width: calc(450px + (var(--cell-size) * var(--cols)));
   --bg-hl: rgba(255, 255, 255, .15);
+  --yes-color: #16c60c;
 }
 * {
   box-sizing: border-box;

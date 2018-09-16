@@ -4,6 +4,7 @@ import Results from "./Results"
 import Menu from "./Menu"
 import Score from "./Score"
 import { Consumer, total } from "../data"
+import Emoji from "./Emoji"
 
 const Sidebar = () => (
   <Consumer>
@@ -33,13 +34,16 @@ const Sidebar = () => (
         <div className="Sidebar-group Sidebar-score">
           <label>Score</label>
           <div className="Sidebar-group-container">
-            <div className="Results-flags" title="Flags">
+            <div className="Results-wrapper Results-flags" title="Flags">
+              <Emoji symbol="🚩" />
               <Score text={String(flags)} />
             </div>
-            <div className="Results-hits" title="Hits">
+            <div className="Results-wrapper Results-hits" title="Hits">
+              <Emoji symbol="✔️" />
               <Score text={resultsVisible ? hits : ``} />
             </div>
-            <div className="Results-misses" title="Misses">
+            <div className="Results-wrapper Results-misses" title="Misses">
+              <Emoji symbol="❌" />
               <Score text={resultsVisible ? total - hits : ``} />
             </div>
           </div>

@@ -9,17 +9,11 @@
 }
 
 .Results-hits:before {
-  color: green;
-  content: var(--yes);
+  color: var(--yes-color);
 }
 
 .Results-misses:before {
   color: red;
-  content: var(--no);
-}
-
-.Results-flags:before {
-  content: var(--flag);
 }
 
 .Results label {
@@ -37,6 +31,7 @@
   background: var(--bg-hl);
   padding: 10px;
   margin-bottom: 10px;
+  display: flex;
 }
 .App-results-true .Results-face {
   cursor: help;
@@ -58,4 +53,9 @@ button[disabled] {
 }
 button[disabled]:hover {
   background: inherit;
+}
+
+.Results-wrapper {
+  display: flex;
+  align-items: center;
 }

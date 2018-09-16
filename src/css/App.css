@@ -20,6 +20,11 @@
   height: var(--height);
   line-height: 1.25em;
   vertical-align: top;
+  display: flex;
+  align-items: center;
+}
+.App-title .Emoji {
+  margin-right: .25em;
 }
 .App-menu {
   display: flex;

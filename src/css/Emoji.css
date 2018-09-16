@@ -1,0 +1,43 @@
+.App-emoji-false .Emoji {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.App-emoji-false .CellContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CellContent .Emoji {
+  display: none;
+}
+.App-results-true .Cell-loose-true:not(.Cell-strict-true) .CellContent-on-false .Emoji-miss {
+  display: inline;
+  color: red;
+}
+.App-results-true .Cell-loose-true .CellContent-on-true .Emoji-hit,
+.Cell-strict-true .CellContent .Emoji-hit {
+  color: var(--yes-color);
+  display: inline;
+}
+.App-results-false .Cell:not(.Cell-strict-true) .CellContent-on-true .Emoji-flag {
+  display: inline;
+}
+.App-emoji-false .Emoji-symbol {
+  display: none;
+}
+.App-emoji-true .Emoji {
+  background-image: none !important;
+}
+
+.App-emoji-false .Sidebar .Emoji {
+  margin: 0 .25em;
+}
+
+.App-emoji-false .Results .Emoji:first-child {
+  margin-left: 0;
+}

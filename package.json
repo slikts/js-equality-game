@@ -4,6 +4,7 @@
   "homepage": "https://slikts.github.io/js-equality-game",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "detect-emoji-support": "^0.1.6",
     "immer-wieder": "^1.1.4",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
