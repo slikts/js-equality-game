@@ -29,7 +29,8 @@
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.2",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "emoji-extractor": "^1.0.0"
   },
   "description": "The worst minesweeper ever",
   "main": "src/index.js",
