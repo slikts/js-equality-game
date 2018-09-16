@@ -32,4 +32,4 @@ The game uses emojis; your system and browser needs to support [color fonts] and
 [color fonts]: https://www.colorfonts.wtf/
 [EmojiOne]: https://www.emojione.com/
 [Noto Color Emoji]: https://www.google.com/get/noto/help/emoji/
-[screenshot]: https://i.imgur.com/64zRrzn.png
+[screenshot]: https://i.imgur.com/VFToyHp.png
