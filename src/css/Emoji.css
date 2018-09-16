@@ -41,3 +41,7 @@
 .App-emoji-false .Results .Emoji:first-child {
   margin-left: 0;
 }
+
+.Results-face .Emoji {
+  line-height: 1em;
+}

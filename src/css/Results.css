@@ -32,6 +32,7 @@
   padding: 10px;
   margin-bottom: 10px;
   display: flex;
+  align-items: center;
 }
 .App-results-true .Results-face {
   cursor: help;

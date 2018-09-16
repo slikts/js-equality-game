@@ -7,7 +7,9 @@
   cursor: default;
 }
 .CellContent {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: var(--cell-size);
   position: absolute;
   top: 0;
@@ -99,7 +101,3 @@ button:active {
   background: var(--bg);
 }
 
-
-.App-results-false .Cell:not(.Cell-strict-true) .CellContent-on-true .Emoji-flag {
-  display: inline-block;
-}
