@@ -1,15 +1,16 @@
 import * as React from "react"
+import "../css/Menu.css"
 import { Consumer } from "../data"
 
 const Menu = () => (
   <Consumer>
     {({ actions: { reset } }) => (
-      <ol className="App-menu">
+      <ol className="Menu">
         <li>
-          <a onClick={reset} href="#">
+          <button onClick={reset}>
             <span>R</span>
             eset
-          </a>
+          </button>
         </li>
         <li>
           <a

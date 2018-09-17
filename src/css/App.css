@@ -26,26 +26,26 @@
 .App-title .Emoji {
   margin-right: .25em;
 }
-.App-menu {
+.Menu {
   display: flex;
   user-select: none;
   margin: 5px 10px 15px;
 }
-.App-menu li {
+.Menu li {
   margin-right: 20px;
 }
-.App-menu span {
+.Menu span {
   text-decoration: underline;
 }
-.App-menu a {
+.Menu a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
-.App-menu a:hover {
+.Menu a:hover {
   text-decoration: underline;
 }
-.App-menu a:active {
+.Menu a:active {
   position: relative;
   top: 1px;
   left: 1px;
