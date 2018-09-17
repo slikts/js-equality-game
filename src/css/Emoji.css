@@ -21,8 +21,10 @@
 }
 .App-results-true .Cell-loose-true .CellContent-on-true .Emoji-hit,
 .Cell-strict-true .CellContent .Emoji-hit {
-  color: var(--yes-color);
   display: inline;
+}
+.Emoji-hit {
+  color: var(--yes-color);
 }
 .App-results-false .Cell:not(.Cell-strict-true) .CellContent-on-true .Emoji-flag {
   display: inline;

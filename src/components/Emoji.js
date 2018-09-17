@@ -9,7 +9,6 @@ const Emoji = ({ symbol, label }) => {
       style={{
         backgroundImage: `url(${path})`,
       }}
-      alt={symbol}
     >
       <span className="Emoji-symbol">{symbol}</span>
     </span>

@@ -8,10 +8,6 @@
   justify-content: center;
 }
 
-.Results-hits:before {
-  color: var(--yes-color);
-}
-
 .Results-misses:before {
   color: red;
 }

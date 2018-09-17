@@ -39,7 +39,7 @@ const Sidebar = () => (
               <Score text={String(flags)} />
             </div>
             <div className="Results-wrapper Results-hits" title="Hits">
-              <Emoji symbol="✔️" />
+              <Emoji symbol="✔️" label="hit" />
               <Score text={resultsVisible ? hits : ``} />
             </div>
             <div className="Results-wrapper Results-misses" title="Misses">
