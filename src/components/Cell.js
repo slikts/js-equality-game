@@ -14,12 +14,7 @@ export const CellContent = ({ toggled }) => (
 export const CellControl = ({ x, y }) => (
   <Consumer>
     {({ actions: { toggle } }) => (
-      <button
-        className="CellControl"
-        onClick={() => {
-          toggle(x, y)
-        }}
-      />
+      <button className="CellControl" onClick={() => void toggle(x, y)} />
     )}
   </Consumer>
 )
