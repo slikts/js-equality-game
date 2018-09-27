@@ -26,6 +26,10 @@ The initial reason to make this game was to try out state management with [immer
 
 The game uses emojis; your system and browser should preferably support [color fonts] and have an emoji font like [EmojiOne] or [Noto Color Emoji] installed for the emojis to display properly. If not, the game will provide fallback SVG images from [emojitwo] (using [emoji-extractor]).
 
+## Other Quirky Web-Related Games
+
+* [Flexbox Froggy](https://flexboxfroggy.com/) - A game for learning CSS [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+
 [table]: https://github.com/dorey/Javascript-Equality-Table/
 [wikipedia]: https://en.wikipedia.org/wiki/Strong_and_weak_typing
 [reorder]: http://algassert.com/visualization/2014/03/27/Better-JS-Equality-Table.html
