@@ -28,8 +28,9 @@ The game uses emojis; your system and browser should preferably support [color f
 
 ## Other Quirky Web-Related Games
 
-* [Flexbox Froggy](https://flexboxfroggy.com/) - learn CSS [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-* [Grid Garden](http://cssgridgarden.com/) - learn CSS [grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
+* [Flexbox Froggy](https://flexboxfroggy.com/) – learn CSS [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+* [Grid Garden](http://cssgridgarden.com/) – learn CSS [grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
+* [WarriorJS](https://warriorjs.com/) – control a game character using JS 
 
 [table]: https://github.com/dorey/Javascript-Equality-Table/
 [wikipedia]: https://en.wikipedia.org/wiki/Strong_and_weak_typing
