@@ -13,7 +13,7 @@ const App = () => (
           className={`App App-results-${resultsVisible} App-emoji-${emojiSupport()}`}
         >
           <h1 className="App-title">
-            How well do you know <code>==</code> in JavaScript
+            How well do you know <code>==</code> in JavaScript?
           </h1>
           <div className="App-contents">
             <Grid resultsVisible={resultsVisible} />
