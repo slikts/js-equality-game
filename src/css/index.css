@@ -59,7 +59,9 @@ ol, ul, li {
 }
 
 code {
-  background: #ccc;
+  background: rgba(255, 255, 255, .25);
+  font-family: var(--monospace);
+  padding: 0 .4em;
 }
 @media (min-width: 1500px) and (min-height: 800px) {
   :root {

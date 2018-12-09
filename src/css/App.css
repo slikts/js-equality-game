@@ -10,17 +10,23 @@
 .App-title {
   background: #00f;
   color: #fff;
-  padding: .2em 0 0 1px;
   margin: 2px 2px 0;
   font-weight: bold;
   font-size: 16px;
   cursor: default;
   user-select: none;
-  display: flex;
-  align-items: center;
   line-height: 1em;
-  padding: 5px 0 4px 2px;
+  padding: 4px 0 3px 4px;
+  white-space: nowrap;
 }
-.App-title .Emoji {
+.App-title svg {
+  width: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+.App-title svg:last-child {
+  margin-left: .25em;
+}
+.App-title svg:first-child {
   margin-right: .25em;
 }
