@@ -57,7 +57,12 @@ ol, ul, li {
   padding: 0;
   list-style: none;
 }
-
+.Menu {
+  order: -2;
+}
+.Sidebar-language {
+  order: -1;
+}
 code {
   background: rgba(255, 255, 255, .25);
   font-family: var(--monospace);
@@ -91,11 +96,24 @@ code {
   .App-credit {
     margin-bottom: .5em;
   }
+  .Sidebar-about {
+    max-width: 75%;
+  }
+  .Sidebar-language {
+    flex-grow: 1;
+    order: 0;
+  }
+  .Menu {
+    width: 100%;
+  }
 }
 @media (max-width: 700px) { 
   :root {
     --app-width: calc(100vw - 20px);
     --cell-size: 24px;
+  }
+  .Sidebar-about {
+    max-width: 100%;
   }
 }
 @media (max-width: 400px) { 

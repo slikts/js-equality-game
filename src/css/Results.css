@@ -29,6 +29,7 @@
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .Results-wrapper,
 .App-results-true .Results-face {

@@ -18,15 +18,6 @@ const Sidebar = () => (
     }) => (
       <div className="Sidebar">
         <Menu />
-        <div className="Sidebar-group Sidebar-language">
-          <label>{i18n`Language`}</label>
-          <p>
-            <select value={locale} onChange={updateLocale}>
-              <option value="en-US">{i18n`English`}</option>
-              <option value="lv-LV">{i18n`Latvian`}</option>
-            </select>
-          </p>
-        </div>
 
         <div className="Sidebar-group Sidebar-about">
           <label>{i18n`About`}</label>
@@ -51,6 +42,17 @@ const Sidebar = () => (
             </span>
           </p>
         </div>
+
+        <div className="Sidebar-group Sidebar-language">
+          <label>{i18n`Language`}</label>
+          <p>
+            <select value={locale} onChange={updateLocale}>
+              <option value="en-US">{i18n`English`}</option>
+              <option value="lv-LV">{i18n`Latvian`}</option>
+            </select>
+          </p>
+        </div>
+
         <div className="Sidebar-group Sidebar-score">
           <label>{i18n`Score`}</label>
           <div className="Sidebar-group-container">
