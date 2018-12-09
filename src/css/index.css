@@ -109,3 +109,8 @@ code {
   text-align: right;
   text-align: center;
 }
+
+.Sidebar-language select {
+  width: 100%;
+  font-size: 1rem;
+}
