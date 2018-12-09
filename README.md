@@ -36,7 +36,7 @@ Transitivity means that if A equals B and B equals C, then A should equal C, but
 
 Tripple equals or [strict equality checking rules][strict-rules] are much simpler than `==`; objects are compared by identity and primitives by value (roughly speaking), but it's still possible to create subtle type-related error conditions by forgetting to convert the compared values to the same type. For example, the user might compare `"1" === 2`, intending to compare numbers, and the resulting `false` would suggest that the comparison is working correctly, even though `"2" === 2` would fail.
 
-A language like TypeScript would catch these issues, because static typing follows the _fail-fast_ design principle, while dynamic typing is ultimately follows _garbage in, garbage out_ – the responsibility is on the user to make sure that the comparison is sound.
+A language like TypeScript would catch these issues, because static typing follows the _fail-fast_ design principle, while dynamic typing ultimately follows _garbage in, garbage out_ – the responsibility is on the user to make sure that the comparison is sound.
 
 ## Trivia
 
