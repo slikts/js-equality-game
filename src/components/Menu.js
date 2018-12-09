@@ -14,7 +14,7 @@ const Menu = () => (
         </li>
         <li>
           <a
-            href="http://github.com/slikts/js-equality-game#about"
+            href="http://github.com/slikts/js-equality-game#about-"
             target="_blank"
             rel="noopener noreferrer"
           >
