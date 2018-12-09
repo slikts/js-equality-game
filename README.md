@@ -16,7 +16,7 @@
 
 [![Screenshot]][game]
 
-<h2 id="about">About <code>==</code></h2>
+## About `==`
 
 The `==` or loose equality operator (and its counterpart `!=`) in JavaScript tries to save the user from having to explicitly convert (cast) values to a common type to make comparisons, so, for example, `"5" == 5` implicitly converts (coerces) the string `"5"` to a number, so the comparison 'just works'. Without loose equality, the same comparison would need to be expressed as either `Number("5") == 5` or `"5" == String(5)`, or, at the shortest, `+"5" == 5` to be true.
 
