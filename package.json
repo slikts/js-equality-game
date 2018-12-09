@@ -16,8 +16,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "cd ../eq-gh-pages; git rm -rf .; cp -R ../equality-quiz-js/build/* .; git add .; git commit -m upd; git push",
     "emojis": "rimraf public/emojis; emoji-extractor 'src/**/*.js' public/emojis '../emojitwo/svg/*.svg'"
   },
   "devDependencies": {
