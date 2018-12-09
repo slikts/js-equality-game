@@ -100,3 +100,7 @@ code {
     --cell-size: 12px;
   }
 }
+#credit {
+  font-size: 80%;
+  margin-top: -.5em;
+}
