@@ -12,7 +12,7 @@
   "Flag all cells where the values are loosely equal according to": "Atzīmē visas šūnas, kuru vērtības ir abstrakti vienādas saskaņā ar",
   "The cells that are strictly equal are already revealed.": "Šūnas, kuras ir strikti vienādas, ir jau atklātas.",
   "The table is diagonally symmetrical, so only one side needs to be flagged.": "Tabula ir diognāli simetriska, tāpēc atzīmes nav jāizdara abās pusēs",
-  "Wrong guesses count against the final score.": "Nepareizi minējumi samazina gala rezultātu.",
+  "Wrong guesses count against the final score:": "Nepareizi minējumi samazina gala rezultātu:",
   "Show Results": "Parādīt rezultātus",
   "Results": "Rezultāti",
   "Score": "Vērtējums",
@@ -22,5 +22,8 @@
   "made by": "veidojis",
   "Pending…": "Gaida…",
   "correct": "pareizi",
-  "wrong": "nepareizi"
+  "wrong": "nepareizi",
+  "wrongness": "nepareizība",
+  "flags - hits + misses": "karogi - trāp. + garām",
+  "max hits": "maksimālie trāpījumi"
 }

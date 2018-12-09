@@ -41,7 +41,15 @@ const Sidebar = () => (
           <p>
             {i18n`The table is diagonally symmetrical, so only one side needs to be flagged.`}
           </p>
-          <p>{i18n`Wrong guesses count against the final score.`}</p>
+          <p>{i18n`Wrong guesses count against the final score:`}</p>
+          <p className="Sidebar-math">
+            {i18n`wrongness`} =&nbsp;
+            <span>
+              <span>{i18n`flags - hits + misses`}</span>
+              {` `}
+              <span>{i18n`max hits`}</span>
+            </span>
+          </p>
         </div>
         <div className="Sidebar-group Sidebar-score">
           <label>{i18n`Score`}</label>
