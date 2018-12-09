@@ -8,11 +8,14 @@ const move = e => {
   const rulerX = grid.querySelector(`.Grid-ruler-x`)
   const rulerY = grid.querySelector(`.Grid-ruler-y`)
   const gridRect = grid.getBoundingClientRect()
-  const cellRect = grid.querySelector(`.CellContent`).getBoundingClientRect()
+  const cellRect = grid
+    .querySelector(`.CellContent`)
+    .getBoundingClientRect()
   const tooltip = grid.querySelector(`.Grid-tooltip`)
 
   if (
-    e.clientX - gridRect.left <= cellRect.left - gridRect.left ||
+    e.clientX - gridRect.left <=
+      cellRect.left - gridRect.left ||
     e.clientY - gridRect.top <= cellRect.top - gridRect.top
   ) {
     rulerX.style.display = `none`
@@ -20,10 +23,18 @@ const move = e => {
     tooltip.style.display = `none`
     return
   }
-  const x = Math.min(values.length - 1, Math.floor((e.clientX - cellRect.left) / cellRect.width))
-  const width = x * cellRect.width + (cellRect.left - gridRect.left - 1)
-  const y = Math.min(values.length - 1, Math.floor((e.clientY - cellRect.top) / cellRect.height))
-  const height = y * cellRect.height + cellRect.top - gridRect.top
+  const x = Math.min(
+    values.length - 1,
+    Math.floor((e.clientX - cellRect.left) / cellRect.width),
+  )
+  const width =
+    x * cellRect.width + (cellRect.left - gridRect.left - 1)
+  const y = Math.min(
+    values.length - 1,
+    Math.floor((e.clientY - cellRect.top) / cellRect.height),
+  )
+  const height =
+    y * cellRect.height + cellRect.top - gridRect.top
   rulerX.style.display = `block`
   rulerX.style.width = `${width}px`
   rulerX.style.top = `${height - 1}px`
@@ -39,7 +50,10 @@ const move = e => {
   tooltip.style.display = `block`
   tooltip.style.right = `${Math.max(
     -(clientWidth - gridRect.right),
-    clientWidth - e.clientX - (clientWidth - gridRect.right) - tooltip.offsetWidth / 2,
+    clientWidth -
+      e.clientX -
+      (clientWidth - gridRect.right) -
+      tooltip.offsetWidth / 2,
   )}px`
   tooltip.style.top = `${Math.min(
     clientHeight - gridRect.top - tooltip.offsetHeight,
@@ -53,9 +67,15 @@ const Grid = () => (
     onMouseMove={move}
     onMouseLeave={({ target }) => {
       const table = target.closest(`.Grid-wrapper`)
-      table.querySelector(`.Grid-ruler-x`).style.display = `none`
-      table.querySelector(`.Grid-ruler-y`).style.display = `none`
-      table.querySelector(`.Grid-tooltip`).style.display = `none`
+      table.querySelector(
+        `.Grid-ruler-x`,
+      ).style.display = `none`
+      table.querySelector(
+        `.Grid-ruler-y`,
+      ).style.display = `none`
+      table.querySelector(
+        `.Grid-tooltip`,
+      ).style.display = `none`
     }}
   >
     <table className="Grid">

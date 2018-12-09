@@ -11,7 +11,9 @@ const GridRow = ({ cells, y }) => (
       <td key={`${x}-${y}`}>
         <div
           className={`Cell Cell-loose-${loose} Cell-strict-${strict}`}
-          data-tooltip={`${a.name} ==${strict ? `=` : ``} ${b.name}`}
+          data-tooltip={`${a.name} ==${strict ? `=` : ``} ${
+            b.name
+          }`}
         >
           <CellContent toggled={toggled} />
           <CellControl x={x} y={y} />

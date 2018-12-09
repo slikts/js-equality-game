@@ -13,7 +13,10 @@ const Letters = ({ text, name }) => (
 
 const Score = ({ text }) => (
   <div className="Score">
-    <Letters text={``.padStart(3 - String(text).length, `0`)} name="a" />
+    <Letters
+      text={``.padStart(3 - String(text).length, `0`)}
+      name="a"
+    />
     <Letters text={String(text)} name="b" />
   </div>
 )

@@ -5,8 +5,15 @@ import Emoji from "./Emoji"
 
 const Results = () => (
   <Consumer>
-    {({ actions: { showResults }, hits, flags, resultsVisible }) => {
-      const wrong = Math.round(((total - hits + flags - hits) / total) * 100)
+    {({
+      actions: { showResults },
+      hits,
+      flags,
+      resultsVisible,
+    }) => {
+      const wrong = Math.round(
+        ((total - hits + flags - hits) / total) * 100,
+      )
       let face = `🤔`
       let title = ``
       let label = `Pending…`
@@ -18,7 +25,8 @@ const Results = () => (
           } else if (wrong > 100) {
             face = `💩`
           }
-          title = `((${flags} - ${hits} + ${total - hits}) / ${total}) * 100 = ${wrong}% wrong`
+          title = `((${flags} - ${hits} + ${total -
+            hits}) / ${total}) * 100 = ${wrong}% wrong`
         } else {
           label = `${100 - wrong}% correct`
           if (wrong >= 90) {
@@ -38,8 +46,8 @@ const Results = () => (
           } else if (wrong === 0) {
             face = `🎉`
           }
-          title = `100 - ((${flags} - ${hits} + ${total - hits}) / ${total}) * 100 = ${100 -
-            wrong}% correct`
+          title = `100 - ((${flags} - ${hits} + ${total -
+            hits}) / ${total}) * 100 = ${100 - wrong}% correct`
         }
       }
       return (
@@ -49,7 +57,10 @@ const Results = () => (
             {label}
           </div>
           <div className="Results-controls">
-            <button onClick={() => showResults()} disabled={resultsVisible}>
+            <button
+              onClick={() => showResults()}
+              disabled={resultsVisible}
+            >
               Show Results
             </button>
           </div>
