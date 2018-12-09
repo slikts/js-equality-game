@@ -46,9 +46,11 @@ export const total =
 
 const langHash = window.location.hash.slice(1)
 const locale =
-  [...translationData.keys()].find(x =>
-    x.startsWith(langHash),
-  ) || `en-US`
+  (langHash &&
+    [...translationData.keys()].find(x =>
+      x.startsWith(langHash),
+    )) ||
+  `en-US`
 i18nConfig({
   locales: locale,
   translations: translationData.get(locale),
@@ -108,6 +110,8 @@ export const { Provider, Consumer } = createContext(setState =>
         setState(state => {
           state.locale = locales
         })
+        const [shortLocale] = locales.split(`-`)
+        window.location.hash = shortLocale
       },
     },
   }),

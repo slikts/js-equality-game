@@ -29,14 +29,14 @@ const Sidebar = () => (
         </div>
 
         <div className="Sidebar-group Sidebar-about">
-          <label>About</label>
+          <label>{i18n`About`}</label>
           <p>
             {i18n`Test your mettle against what's considered a textbook example of a confusing language design flaw – JavaScript's loose equality operator.`}
           </p>
           <p>
             {i18n`Flag all cells where the values are loosely equal according to`}
-            <code>==</code>
-            {i18n`. The cells that are strictly equal are already revealed.`}
+            <code>==</code>.{` `}
+            {i18n`The cells that are strictly equal are already revealed.`}
           </p>
           <p>
             {i18n`The table is diagonally symmetrical, so only one side needs to be flagged.`}
