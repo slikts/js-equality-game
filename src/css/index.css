@@ -88,6 +88,9 @@ code {
   .App .Sidebar-score .Sidebar-group-container {
     margin-left: 0;
   }
+  #credit {
+    margin-bottom: .5em;
+  }
 }
 @media (max-width: 700px) { 
   :root {
@@ -103,4 +106,5 @@ code {
 #credit {
   font-size: 80%;
   margin-top: -.5em;
+  text-align: right;
 }
