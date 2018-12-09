@@ -111,7 +111,11 @@ export const { Provider, Consumer } = createContext(setState =>
           state.locale = locales
         })
         const [shortLocale] = locales.split(`-`)
-        window.location.hash = shortLocale
+        window.history.replaceState(
+          null,
+          ``,
+          shortLocale === `en` ? `/` : `#${shortLocale}`,
+        )
       },
     },
   }),
