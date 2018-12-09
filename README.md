@@ -10,6 +10,7 @@
 - [Discussion about value order][reorder]
 - [Weak typing][wikipedia] in Wikipedia
 - [Visual explanation][visual]
+- [Abstract equality comparison rules][abstract-rules] in ECMA-262
 
 ## Screenshot
 
@@ -33,7 +34,7 @@ Transitivity means that if A equals B and B equals C, then A should equal C, but
 
 ### `===` isn't a panacea for typing issues
 
-Tripple equals or strict equality checking rules are much simpler than `==`; objects are compared by identity and primitives by value (roughly speaking), but it's still possible to create subtle type-related error conditions by forgetting to convert the compared values to the same type. For example, the user might compare `"1" === 2`, intending to compare numbers, and the resulting `false` would suggest that the comparison is working correctly, even though `"2" === 2` would fail.
+Tripple equals or [strict equality checking rules][strict-rules] are much simpler than `==`; objects are compared by identity and primitives by value (roughly speaking), but it's still possible to create subtle type-related error conditions by forgetting to convert the compared values to the same type. For example, the user might compare `"1" === 2`, intending to compare numbers, and the resulting `false` would suggest that the comparison is working correctly, even though `"2" === 2` would fail.
 
 A language like TypeScript would catch these issues, because static typing follows the _fail-fast_ design principle, while dynamic typing is ultimately follows _garbage in, garbage out_ – the responsibility is on the user to make sure that the comparison is sound.
 
@@ -52,6 +53,14 @@ If the implicit coercion rules were as non-confusing as claimed by getify, most 
 ## Emojis
 
 The game uses emojis; your system and browser should preferably support [color fonts] and have an emoji font like [EmojiOne] or [Noto Color Emoji] installed for the emojis to display properly. If not, the game will provide fallback SVG images from [emojitwo] (using [emoji-extractor]).
+
+## License
+
+MIT
+
+## Author
+
+[slikts](http://untu.ms) &lt;dabas@untu.ms>
 
 ## Other web-related games
 
@@ -72,3 +81,5 @@ The game uses emojis; your system and browser should preferably support [color f
 [game]: https://slikts.github.io/js-equality-game/
 [emojitwo]: https://emojitwo.github.io/
 [emoji-extractor]: https://github.com/slikts/emoji-extractor
+[strict-rules]: http://www.ecma-international.org/ecma-262/9.0/index.html#sec-strict-equality-comparison
+[abstract-rules]: http://www.ecma-international.org/ecma-262/9.0/index.html#sec-abstract-equality-comparison
