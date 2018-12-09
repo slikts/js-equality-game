@@ -1,4 +1,5 @@
 import * as React from "react"
+import i18n from "es2015-i18n-tag"
 import "../css/Results.css"
 import { Consumer, total } from "../data"
 import Emoji from "./Emoji"
@@ -16,7 +17,7 @@ const Results = () => (
       )
       let face = `🤔`
       let title = ``
-      let label = `Pending…`
+      let label = i18n`Pending…`
       if (resultsVisible) {
         if (wrong >= 100) {
           label = `${wrong}% wrong`
@@ -61,7 +62,7 @@ const Results = () => (
               onClick={() => showResults()}
               disabled={resultsVisible}
             >
-              Show Results
+              {i18n`Show Results`}
             </button>
           </div>
         </div>

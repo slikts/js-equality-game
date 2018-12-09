@@ -1,4 +1,6 @@
 import createContext from "immer-wieder"
+import { i18nConfig } from "es2015-i18n-tag"
+import translationData from "./translationData"
 
 /* eslint-disable no-new-func, eqeqeq */
 export const values = [
@@ -23,7 +25,10 @@ export const values = [
   `[0]`,
   `[1]`,
   `NaN`,
-].map(name => ({ name, value: () => new Function(`return ${name}`)() }))
+].map(name => ({
+  name,
+  value: () => new Function(`return ${name}`)(),
+}))
 
 const grid = values.map(a =>
   values.map(b => ({
@@ -34,7 +39,20 @@ const grid = values.map(a =>
     toggled: false,
   })),
 )
-export const total = [].concat(...grid).filter(({ strict, loose }) => loose && !strict).length / 2
+export const total =
+  []
+    .concat(...grid)
+    .filter(({ strict, loose }) => loose && !strict).length / 2
+
+const langHash = window.location.hash.slice(1)
+const locale =
+  [...translationData.keys()].find(x =>
+    x.startsWith(langHash),
+  ) || `en-US`
+i18nConfig({
+  locales: locale,
+  translations: translationData.get(locale),
+})
 
 const init = draft =>
   void Object.assign(draft, {
@@ -43,6 +61,7 @@ const init = draft =>
     misses: 0,
     hits: 0,
     flags: 0,
+    locale,
   })
 
 const applyInit = o => {
@@ -77,6 +96,18 @@ export const { Provider, Consumer } = createContext(setState =>
       reset: e => {
         e.preventDefault()
         setState(init)
+      },
+      updateLocale: async e => {
+        const locales = e.target.value
+        const translations =
+          (await translationData.get(locales)) || []
+        i18nConfig({
+          locales,
+          translations,
+        })
+        setState(state => {
+          state.locale = locales
+        })
       },
     },
   }),

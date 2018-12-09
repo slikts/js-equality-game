@@ -88,7 +88,7 @@ code {
   .App .Sidebar-score .Sidebar-group-container {
     margin-left: 0;
   }
-  #credit {
+  .App-credit {
     margin-bottom: .5em;
   }
 }
@@ -103,8 +103,9 @@ code {
     --cell-size: 12px;
   }
 }
-#credit {
+.App-credit {
   font-size: 80%;
   margin-top: -.5em;
   text-align: right;
+  text-align: center;
 }

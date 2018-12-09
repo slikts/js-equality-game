@@ -1,0 +1,23 @@
+{
+  "Language": "",
+  "About": "",
+  "Latvian": "",
+  "English": "",
+  "Help": "",
+  "Restart": "",
+  "How well do you know": "",
+  "in JavaScript?": "",
+  "Test your mettle against what's considered a textbook example of a confusing language design flaw – JavaScript's loose equality operator.": "",
+  "Flag all cells where the values are loosely equal according to": "",
+  ". The cells that are strictly equal are already revealed.": "",
+  "The table is diagonally symmetrical, so only one side needs to be flagged.": "",
+  "Wrong guesses count against the final score.": "",
+  "Show Results": "",
+  "Results": "",
+  "Score": "",
+  "Flags": "",
+  "Hits": "",
+  "Misses": "",
+  "made by": "",
+  "Pending…": ""
+}

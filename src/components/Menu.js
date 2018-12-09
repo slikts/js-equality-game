@@ -1,4 +1,5 @@
 import * as React from "react"
+import i18n from "es2015-i18n-tag"
 import "../css/Menu.css"
 import { Consumer } from "../data"
 
@@ -7,10 +8,7 @@ const Menu = () => (
     {({ actions: { reset } }) => (
       <ol className="Menu">
         <li>
-          <button onClick={reset}>
-            <span>R</span>
-            eset
-          </button>
+          <button onClick={reset}>{i18n`Restart`}</button>
         </li>
         <li>
           <a
@@ -18,8 +16,7 @@ const Menu = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>H</span>
-            elp
+            {i18n`Help`}
           </a>
         </li>
       </ol>

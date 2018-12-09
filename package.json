@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "detect-emoji-support": "^0.1.6",
+    "es2015-i18n-tag": "^1.4.1",
     "immer-wieder": "^1.2.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
