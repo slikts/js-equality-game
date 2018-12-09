@@ -20,16 +20,16 @@ const Results = () => (
       let label = i18n`Pending…`
       if (resultsVisible) {
         if (wrong >= 100) {
-          label = `${wrong}% wrong`
+          label = `${wrong}% ${i18n`wrong`}`
           if (wrong === 100) {
             face = `😒`
           } else if (wrong > 100) {
             face = `💩`
           }
           title = `((${flags} - ${hits} + ${total -
-            hits}) / ${total}) * 100 = ${wrong}% wrong`
+            hits}) / ${total}) * 100 = ${wrong}% ${i18n`wrong`}`
         } else {
-          label = `${100 - wrong}% correct`
+          label = `${100 - wrong}% ${i18n`correct`}`
           if (wrong >= 90) {
             face = `😞`
           } else if (wrong >= 80) {
@@ -48,7 +48,8 @@ const Results = () => (
             face = `🎉`
           }
           title = `100 - ((${flags} - ${hits} + ${total -
-            hits}) / ${total}) * 100 = ${100 - wrong}% correct`
+            hits}) / ${total}) * 100 = ${100 -
+            wrong}% ${i18n`correct`}`
         }
       }
       return (
