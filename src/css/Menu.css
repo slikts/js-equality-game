@@ -7,7 +7,7 @@
 .Menu li {
   margin-right: 20px;
 }
-.Menu span {
+.Menu span span {
   text-decoration: underline;
 }
 .Menu a {
