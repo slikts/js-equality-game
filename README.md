@@ -56,6 +56,17 @@ If the implicit coercion rules were as non-confusing as claimed by getify, most 
 
 The game uses emojis; your system and browser should preferably support [color fonts] and have an emoji font like [EmojiOne] or [Noto Color Emoji] installed for the emojis to display properly. If not, the game will provide fallback SVG images from [emojitwo] (using [emoji-extractor]).
 
+## Build
+
+```sh
+npm i
+npm run build # or: npm run start
+```
+
+## Adding a translation
+
+The translation string template is [translations/en-US.json][template], and new translations need to be registered in [translationData.js].
+
 ## License
 
 MIT
@@ -85,3 +96,5 @@ MIT
 [emoji-extractor]: https://github.com/slikts/emoji-extractor
 [strict-rules]: http://www.ecma-international.org/ecma-262/9.0/index.html#sec-strict-equality-comparison
 [abstract-rules]: http://www.ecma-international.org/ecma-262/9.0/index.html#sec-abstract-equality-comparison
+[template]: https://github.com/slikts/js-equality-game/blob/master/src/translations/en-US.json
+[translationData.js]: https://github.com/slikts/js-equality-game/blob/master/src/translationData.js
