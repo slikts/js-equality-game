@@ -72,7 +72,6 @@ const init = draft =>
     misses: 0,
     hits: 0,
     flags: 0,
-    locale,
   })
 
 const applyInit = o => {
@@ -82,6 +81,7 @@ const applyInit = o => {
 
 export const { Provider, Consumer } = createContext(setState =>
   applyInit({
+    locale,
     actions: {
       showResults: () =>
         void setState(state => {
