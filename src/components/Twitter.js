@@ -23,23 +23,28 @@ const handleIntent = (e, disabled = false) => {
   e.preventDefault()
 }
 
-const Twitter = ({ text, disabled }) => (
-  <a
-    title={i18n`Share your result on Twitter`}
-    className={`Twitter button ${disabled ? `disabled` : ``}`}
-    onClick={e => handleIntent(e, disabled)}
-    href={
-      disabled
-        ? undefined
-        : `https://twitter.com/intent/tweet?text=${text}`
-    }
-  >
+const Twitter = ({ text, disabled }) => {
+  const img = (
     <img
       src="https://raw.githubusercontent.com/slikts/js-equality-game/assets/twitter.svg?sanitize=true"
       width="20"
       alt="Twitter"
     />
-  </a>
-)
+  )
+  return disabled ? (
+    <button className="Twitter" disabled>
+      {img}
+    </button>
+  ) : (
+    <a
+      title={i18n`Share your result on Twitter`}
+      className={`Twitter button ${disabled ? `disabled` : ``}`}
+      onClick={e => handleIntent(e, disabled)}
+      href={`https://twitter.com/intent/tweet?text=${text}`}
+    >
+      {img}
+    </a>
+  )
+}
 
 export default Twitter
