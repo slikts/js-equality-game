@@ -92,6 +92,7 @@ a.button {
   display: inline-block;
   text-decoration: none;
   color: inherit;
+  user-select: none;
 }
 a.button,
 button {
