@@ -28,6 +28,7 @@ const Twitter = ({ text, disabled }) => {
     <img
       src="https://raw.githubusercontent.com/slikts/js-equality-game/assets/twitter.svg?sanitize=true"
       width="20"
+      height="16"
       alt="Twitter"
     />
   )
