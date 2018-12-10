@@ -1,5 +1,5 @@
 import createContext from "immer-wieder"
-import { i18nConfig } from "es2015-i18n-tag"
+import i18n, { i18nConfig } from "es2015-i18n-tag"
 import translationData from "./translationData"
 
 /* eslint-disable no-new-func, eqeqeq */
@@ -44,6 +44,9 @@ export const total =
     .concat(...grid)
     .filter(({ strict, loose }) => loose && !strict).length / 2
 
+const updateTitle = () => {
+  document.title = i18n`JavaScript Equality Table Game`
+}
 const langHash = window.location.hash.slice(1)
 const locale =
   (langHash &&
@@ -55,6 +58,7 @@ i18nConfig({
   locales: locale,
   translations: translationData.get(locale),
 })
+updateTitle()
 
 const init = draft =>
   void Object.assign(draft, {
@@ -116,6 +120,7 @@ export const { Provider, Consumer } = createContext(setState =>
           ``,
           shortLocale === `en` ? `/` : `#${shortLocale}`,
         )
+        updateTitle()
       },
     },
   }),
