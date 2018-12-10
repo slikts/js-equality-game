@@ -34,6 +34,10 @@ const App = () => (
             >
               slikts
             </a>
+            &nbsp;&nbsp;&bull;&nbsp; {i18n`contribute a`}&nbsp;
+            <a href="https://github.com/slikts/js-equality-game#adding-a-translation">
+              {i18n`translation`}
+            </a>
           </footer>
         </div>
       )}
