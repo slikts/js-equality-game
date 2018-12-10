@@ -14,7 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && echo eqeq.js.org>build/CNAME && cp -R public/emojis build",
+    "build": "react-scripts build",
+    "postbuild": "echo eqeq.js.org>build/CNAME && cp -R public/emojis build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "emojis": "rimraf public/emojis && emoji-extractor 'src/**/*.js' public/emojis '../emojitwo/svg/*.svg'",

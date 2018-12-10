@@ -5,6 +5,8 @@
 
 ---
 
+[![Build Status](https://travis-ci.org/slikts/js-equality-game.svg?branch=master)](https://travis-ci.org/slikts/js-equality-game)
+
 - [**Play the game**][game]
 - Inspired by [JavaScript Equality Table][table]
 - [Discussion about value order][reorder]
