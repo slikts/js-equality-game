@@ -27,5 +27,7 @@
   "flags - hits + misses": "markers - treffers + missers",
   "max hits": "haalbare treffers",
   "Share your result on Twitter": "Deel je resultaten op Twitter",
-  "My result in JavaScript Equality Table Game: ${0} ${1} ${2}": "Mijn resultaten in het JavaScript Gelijkheidstabelspel: ${0} ${1} ${2}"
+  "My result in JavaScript Equality Table Game: ${0} ${1} ${2}": "Mijn resultaten in het JavaScript Gelijkheidstabelspel: ${0} ${1} ${2}",
+  "contribute a": "help met",
+  "translation": "vertalen"
 }

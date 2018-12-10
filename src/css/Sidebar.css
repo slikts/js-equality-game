@@ -48,6 +48,8 @@
   border-bottom: 1px solid;
 }
 .Sidebar-math {
+  /* XXX needs a non-hardcoded solution */
+  max-width: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
