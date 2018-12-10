@@ -126,6 +126,7 @@ code {
   margin-top: -.5em;
   text-align: right;
   text-align: center;
+  cursor: default;
 }
 
 .Sidebar-language select {
