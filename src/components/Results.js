@@ -3,6 +3,7 @@ import i18n from "es2015-i18n-tag"
 import "../css/Results.css"
 import { Consumer, total } from "../data"
 import Emoji from "./Emoji"
+import Twitter from "./Twitter"
 
 const Results = () => (
   <Consumer>
@@ -52,19 +53,24 @@ const Results = () => (
             wrong}% ${i18n`correct`}`
         }
       }
+      const tweet = window.encodeURIComponent(
+        i18n`My result in JavaScript Equality Table Game: ${label} ${face} ${`https://eqeq.js.org`}`,
+      )
       return (
         <div className="Results">
           <div className="Results-face" title={title}>
+            {label}&nbsp;
             <Emoji symbol={face} />
-            {label}
           </div>
           <div className="Results-controls">
             <button
+              className="Results-submit"
               onClick={() => showResults()}
               disabled={resultsVisible}
             >
               {i18n`Show Results`}
             </button>
+            <Twitter disabled={!resultsVisible} text={tweet} />
           </div>
         </div>
       )

@@ -40,6 +40,7 @@
   width: calc(100% - var(--cell-border) * 2);
   height: calc(100% - var(--cell-border) * 2);
 }
+a.button:hover,
 button:hover,
 .CellControl:hover:before {
   background-color: rgba(255, 255, 255, .25);
@@ -75,6 +76,7 @@ button,
   display: none;
 }
 
+a.button,
 button,
 .App,
 .CellContent {
@@ -86,14 +88,25 @@ button,
   --button-padding-x: 8px;
   --button-padding-y: 2px;
 }
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+a.button,
 button {
+  font-size: 1rem;
   background: var(--bg);
   cursor: pointer;
   outline: none;
   padding: var(--button-padding-y) var(--button-padding-x);
+}
+a.button,
+.App button {
   font-size: 18px;
 }
-button:active {
+a.button:not(.disabled):active,
+button:not([disabled]):active {
   border-style: solid;
   border-width: 1px;
   padding: calc(var(--button-padding-y) + 1px) calc(var(--button-padding-x) + 1px);

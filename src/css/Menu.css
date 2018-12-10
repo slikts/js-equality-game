@@ -2,6 +2,7 @@
   display: flex;
   user-select: none;
   margin: 5px 10px 15px;
+  align-items: end;
 }
 .Menu li {
   margin-right: 20px;
@@ -18,13 +19,13 @@
 .Menu a:hover {
   text-decoration: underline;
 }
-.Menu button:active,
+.Menu button:not([disabled]):active,
 .Menu a:active {
   position: relative;
   top: 1px;
   left: 1px;
 }
-.Menu button {
+.Menu button:not([disabled]) {
   border-style: none;
   padding: 0;
   font-size: inherit;

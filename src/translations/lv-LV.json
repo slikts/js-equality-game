@@ -25,5 +25,7 @@
   "wrong": "nepareizi",
   "wrongness": "nepareizība",
   "flags - hits + misses": "karogi - trāp. + garām",
-  "max hits": "maksimālie trāpījumi"
+  "max hits": "maksimālie trāpījumi",
+  "Share your result on Twitter": "Dalies ar sniegumu Tviterī",
+  "My result in JavaScript Equality Table Game: ${0} ${1} ${2}": "Mans sniegums JavaScript vienādības tabulas spēlē: ${0} ${1} ${2}"
 }
