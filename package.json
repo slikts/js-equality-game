@@ -1,7 +1,7 @@
 {
   "name": "js-equality-game",
   "version": "1.1.1",
-  "homepage": "https://slikts.github.io/js-equality-game",
+  "homepage": "https://eqeq.js.org",
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
     "detect-emoji-support": "^0.1.6",
@@ -17,7 +17,9 @@
     "build": "react-scripts build; echo eqeq.js.org>build/CNAME",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "emojis": "rimraf public/emojis; emoji-extractor 'src/**/*.js' public/emojis '../emojitwo/svg/*.svg'"
+    "emojis": "rimraf public/emojis; emoji-extractor 'src/**/*.js' public/emojis '../emojitwo/svg/*.svg'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@slikts/eslint-config-prettier": "^5.2.0",
