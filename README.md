@@ -46,7 +46,7 @@ Brendan Eich was asked to add the loose equality checking rules by a coworker in
 
 ## Motivation
 
-The initial reason to make this game was to try out state management with [immer-wieder][wieder], but it's also to demonstrate that the `==` rules are easy to get wrong even if you feel like you're familiar with them. It's in response to claims like this one by the well-known author [getify][getify]:
+The initial reason to make this game was to try out state management with [immer-wieder], but it's also to demonstrate that the `==` rules are easy to get wrong even if you feel like you're familiar with them. It's in response to claims like this one by the well-known author [getify][getify]:
 
 > However, implicit coercion is a mechanism that can be learned, and moreover should be learned by anyone wishing to take JavaScript programming seriously. Not only is it not confusing once you learn the rules, it can actually make your programs better! The effort is well worth it.
 
@@ -67,6 +67,11 @@ npm run build # or: npm run start
 
 The translation string template is [translations/en-US.json][template], and new translations need to be registered in [translationData.js].
 
+## Tools used
+
+- [immer-wieder]
+- [es2015-i18n-tag](https://github.com/skolmer/es2015-i18n-tag)
+
 ## License
 
 MIT
@@ -84,7 +89,7 @@ MIT
 [table]: https://github.com/dorey/Javascript-Equality-Table/
 [wikipedia]: https://en.wikipedia.org/wiki/Strong_and_weak_typing
 [reorder]: http://algassert.com/visualization/2014/03/27/Better-JS-Equality-Table.html
-[wieder]: https://github.com/drcmda/immer-wieder
+[immer-wieder]: https://github.com/drcmda/immer-wieder
 [getify]: https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#converting-between-types
 [visual]: https://i.imgur.com/rWoBHj4.png
 [color fonts]: https://www.colorfonts.wtf/
