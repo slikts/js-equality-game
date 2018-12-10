@@ -30,13 +30,14 @@ const Twitter = ({ text, disabled }) => (
     onClick={e => handleIntent(e, disabled)}
     href={
       disabled
-        ? false
+        ? undefined
         : `https://twitter.com/intent/tweet?text=${text}`
     }
   >
     <img
       src="https://raw.githubusercontent.com/slikts/js-equality-game/assets/twitter.svg?sanitize=true"
       width="20"
+      alt="Twitter"
     />
   </a>
 )
