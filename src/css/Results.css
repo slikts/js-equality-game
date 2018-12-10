@@ -65,5 +65,7 @@ button[disabled]:hover {
 }
 
 .Twitter img {
-  display: block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
 }
