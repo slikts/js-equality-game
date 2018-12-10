@@ -8,7 +8,6 @@
 
 # production
 /build
-/public/emojis
 
 # misc
 .DS_Store
