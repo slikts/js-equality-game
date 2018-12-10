@@ -57,7 +57,7 @@ const locale =
   `en-US`
 i18nConfig({
   locales: locale,
-  translations: translationData.get(locale),
+  translations: translationData.get(locale).data,
 })
 const shortenLocale = longLocale => {
   const [shortLocale] = longLocale.split(`-`)
@@ -111,7 +111,7 @@ export const { Provider, Consumer } = createContext(setState =>
       updateLocale: async e => {
         const locales = e.target.value
         const translations =
-          (await translationData.get(locales)) || []
+          (await translationData.get(locales)).data || []
         i18nConfig({
           locales,
           translations,

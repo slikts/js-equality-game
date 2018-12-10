@@ -6,6 +6,7 @@ import Menu from "./Menu"
 import Score from "./Score"
 import { Consumer, total } from "../data"
 import Emoji from "./Emoji"
+import translationData from "../translationData"
 
 const Sidebar = () => (
   <Consumer>
@@ -47,8 +48,11 @@ const Sidebar = () => (
           <label>{i18n`Language`}</label>
           <p>
             <select value={locale} onChange={updateLocale}>
-              <option value="en-US">{i18n`English`}</option>
-              <option value="lv-LV">{i18n`Latvian`}</option>
+              {[...translationData].map(([code, { name }]) => (
+                <option value={code} key={code}>
+                  {i18n.translate(name)}
+                </option>
+              ))}
             </select>
           </p>
         </div>
