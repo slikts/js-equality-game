@@ -1,5 +1,5 @@
 {
-  "short_name": "JS == Game",
+  "short_name": "== Game",
   "name": "JavaScript Equality Table Game",
   "icons": [
     {
@@ -10,6 +10,6 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#55aaaa",
-  "background_color": "#000000"
+  "theme_color": "#56abab",
+  "background_color": "#c1c1c1"
 }
