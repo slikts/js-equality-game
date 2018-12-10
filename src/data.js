@@ -44,8 +44,9 @@ export const total =
     .concat(...grid)
     .filter(({ strict, loose }) => loose && !strict).length / 2
 
-const updateTitle = () => {
+const updateTitle = shortLocale => {
   document.title = i18n`JavaScript Equality Table Game`
+  document.documentElement.setAttribute(`lang`, shortLocale)
 }
 const langHash = window.location.hash.slice(1)
 const locale =
@@ -58,7 +59,11 @@ i18nConfig({
   locales: locale,
   translations: translationData.get(locale),
 })
-updateTitle()
+const shortenLocale = longLocale => {
+  const [shortLocale] = longLocale.split(`-`)
+  return shortLocale
+}
+updateTitle(shortenLocale(locale))
 
 const init = draft =>
   void Object.assign(draft, {
@@ -114,13 +119,13 @@ export const { Provider, Consumer } = createContext(setState =>
         setState(state => {
           state.locale = locales
         })
-        const [shortLocale] = locales.split(`-`)
+        const shortLocale = shortenLocale(locales)
         window.history.replaceState(
           null,
           ``,
           shortLocale === `en` ? `/` : `#${shortLocale}`,
         )
-        updateTitle()
+        updateTitle(shortLocale)
       },
     },
   }),
