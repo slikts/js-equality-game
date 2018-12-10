@@ -50,7 +50,7 @@ const Sidebar = () => (
             <select value={locale} onChange={updateLocale}>
               {[...translationData].map(([code, { name }]) => (
                 <option value={code} key={code}>
-                  {i18n.translate(name)}
+                  {name}
                 </option>
               ))}
             </select>
