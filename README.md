@@ -26,7 +26,7 @@ The general principle behind having implicit type conversion is called _weak typ
 
 ### `==` doesn't check for truthiness or falsiness
 
-Values that convert to either `true` or `false` are called _truthy_ or _falsy_; for example, `0` is falsy because `!!0` or `Boolean(0)` result in `false`. Other examples of falsy values are empty strings, `null`, zero and `undefined`. Meanwhile, all objects (except `document.all`) are truthy, so `!![]` (array object converted to boolean) results in `true`.
+Values that convert to either `true` or `false` are called _truthy_ or _falsy_; for example, `0` is falsy because `!!0` or `Boolean(0)` result in `false`. Other examples of falsy values are empty strings, `null` and `undefined`. Meanwhile, all objects (except `document.all`) are truthy, so `!![]` (array object converted to boolean) results in `true`.
 
 One would reasonably expect that being truthy also implies `== true` and falsy implies `== false`, but that's not the case: `[]` is truthy, but `[] == true` is actually false.
 
