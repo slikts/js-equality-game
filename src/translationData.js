@@ -3,12 +3,14 @@ import english from "./translations/en-US.json"
 import dutch from "./translations/nl-NL.json"
 import french from "./translations/fr-FR.json"
 import german from "./translations/de-DE.json"
+import polish from "./translations/pl-PL.json"
 
 const translationData = new Map() //
   .set(`en-US`, { data: english, name: `English` })
   .set(`de-DE`, { data: german, name: `Deutsch` })
   .set(`fr-FR`, { data: french, name: `Français` })
-  .set(`nl-NL`, { data: dutch, name: `Nederlands` })
   .set(`lv-LV`, { data: latvian, name: `Latviešu` })
+  .set(`nl-NL`, { data: dutch, name: `Nederlands` })
+  .set(`pl-PL`, { data: polish, name: `Polski` })
 
 export default translationData
