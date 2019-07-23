@@ -11,8 +11,8 @@ const label = ([x, ...xs]) => (
 )
 
 const Menu = () => (
-  <Consumer>
-    {({ actions: { reset } }) => (
+  <Consumer select={({ actions }) => actions}>
+    {({ reset }) => (
       <ol className="Menu">
         <li>
           <button onClick={reset}>

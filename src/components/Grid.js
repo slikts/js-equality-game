@@ -89,8 +89,8 @@ const Grid = () => (
           ))}
         </tr>
       </thead>
-      <Consumer>
-        {({ grid }) => (
+      <Consumer select={({ grid }) => grid}>
+        {grid => (
           <tbody>
             {grid.map((row, y) => (
               <GridRow key={y} cells={row} y={y} />

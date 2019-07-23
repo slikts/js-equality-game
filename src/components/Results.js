@@ -6,7 +6,14 @@ import Emoji from "./Emoji"
 import Twitter from "./Twitter"
 
 const Results = () => (
-  <Consumer>
+  <Consumer
+    select={({ actions, hits, flags, resultsVisible }) => ({
+      actions,
+      hits,
+      flags,
+      resultsVisible,
+    })}
+  >
     {({
       actions: { showResults },
       hits,

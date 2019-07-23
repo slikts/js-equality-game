@@ -12,8 +12,8 @@ export const CellContent = ({ toggled }) => (
 )
 
 export const CellControl = ({ x, y }) => (
-  <Consumer>
-    {({ actions: { toggle } }) => (
+  <Consumer select={({ actions }) => actions}>
+    {({ toggle }) => (
       <button
         className="CellControl"
         onClick={() => void toggle(x, y)}

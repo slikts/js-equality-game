@@ -9,7 +9,21 @@ import Emoji from "./Emoji"
 import translationData from "../translationData"
 
 const Sidebar = () => (
-  <Consumer>
+  <Consumer
+    select={({
+      hits,
+      flags,
+      resultsVisible,
+      locale,
+      actions,
+    }) => ({
+      hits,
+      flags,
+      resultsVisible,
+      locale,
+      actions,
+    })}
+  >
     {({
       hits,
       flags,
