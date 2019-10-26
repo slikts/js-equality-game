@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="http://eqeq.js.org/"><img src="https://raw.githubusercontent.com/slikts/js-equality-game/assets/logo.svg?sanitize=true" width="300" alt="JavaScript Equality Table Game"></a>
+  <a href="https://eqeq.js.org/"><img src="https://raw.githubusercontent.com/slikts/js-equality-game/assets/logo.svg?sanitize=true" width="300" alt="JavaScript Equality Table Game"></a>
 </h1>
 <p align="center">…or why you should prefer the <code>===</code> operator.</p>
 
@@ -78,17 +78,17 @@ MIT
 
 ## Author
 
-[slikts](http://untu.ms) &lt;dabas@untu.ms>
+[slikts](https://untu.ms) &lt;dabas@untu.ms>
 
 ## Other web-related games
 
 - [Flexbox Froggy](https://flexboxfroggy.com/) – learn CSS [flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-- [Grid Garden](http://cssgridgarden.com/) – learn CSS [grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
+- [Grid Garden](https://cssgridgarden.com/) – learn CSS [grid](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
 - [WarriorJS](https://warriorjs.com/) – control a game character using JS
 
 [table]: https://github.com/dorey/Javascript-Equality-Table/
 [wikipedia]: https://en.wikipedia.org/wiki/Strong_and_weak_typing
-[reorder]: http://algassert.com/visualization/2014/03/27/Better-JS-Equality-Table.html
+[reorder]: https://algassert.com/visualization/2014/03/27/Better-JS-Equality-Table.html
 [immer-wieder]: https://github.com/drcmda/immer-wieder
 [getify]: https://github.com/getify/You-Dont-Know-JS/blob/master/up%20%26%20going/ch1.md#converting-between-types
 [visual]: https://i.imgur.com/rWoBHj4.png
@@ -99,7 +99,7 @@ MIT
 [game]: https://slikts.github.io/js-equality-game/
 [emojitwo]: https://emojitwo.github.io/
 [emoji-extractor]: https://github.com/slikts/emoji-extractor
-[strict-rules]: http://www.ecma-international.org/ecma-262/9.0/index.html#sec-strict-equality-comparison
-[abstract-rules]: http://www.ecma-international.org/ecma-262/9.0/index.html#sec-abstract-equality-comparison
+[strict-rules]: https://www.ecma-international.org/ecma-262/9.0/index.html#sec-strict-equality-comparison
+[abstract-rules]: https://www.ecma-international.org/ecma-262/9.0/index.html#sec-abstract-equality-comparison
 [template]: https://github.com/slikts/js-equality-game/blob/master/src/translations/en-US.json
 [translationData.js]: https://github.com/slikts/js-equality-game/blob/master/src/translationData.js
