@@ -28,7 +28,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.15.3",
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.0"
   },
   "description": "The worst minesweeper ever",
   "main": "src/index.js",
