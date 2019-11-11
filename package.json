@@ -27,7 +27,7 @@
     "emoji-extractor": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.1",
     "gh-pages": "^2.1.1",
-    "prettier": "^1.15.3",
+    "prettier": "^1.19.1",
     "rimraf": "^3.0.0"
   },
   "description": "The worst minesweeper ever",
