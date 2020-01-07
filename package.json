@@ -4,7 +4,7 @@
   "homepage": "https://eqeq.js.org",
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
-    "core-js": "^3.6.1",
+    "core-js": "^3.6.2",
     "detect-emoji-support": "^0.1.7",
     "es2015-i18n-tag": "^1.6.1",
     "immer-wieder": "^1.2.1",
