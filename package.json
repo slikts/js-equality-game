@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "homepage": "https://eqeq.js.org",
   "dependencies": {
-    "@babel/polyfill": "^7.11.5",
+    "@babel/polyfill": "^7.12.1",
     "core-js": "^3.8.0",
     "detect-emoji-support": "^0.1.7",
     "es2015-i18n-tag": "^1.6.1",
