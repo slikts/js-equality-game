@@ -11,7 +11,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^4.0.1",
-    "whatwg-fetch": "^3.4.1"
+    "whatwg-fetch": "^3.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
