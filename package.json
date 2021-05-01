@@ -8,8 +8,8 @@
     "detect-emoji-support": "^0.1.7",
     "es2015-i18n-tag": "^1.6.1",
     "immer-wieder": "^1.2.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
     "whatwg-fetch": "^3.6.2"
   },
