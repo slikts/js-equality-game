@@ -7,6 +7,7 @@ import polish from "./translations/pl-PL.json"
 import spanish from "./translations/es-ES.json"
 import simplifiedChinese from "./translations/zh-CN.json"
 import korean from "./translations/ko-KR.json"
+import portuguese from "./translations/pt-PT.json"
 
 const translationData = new Map() //
   .set(`en-US`, { data: english, name: `English` })
@@ -18,5 +19,6 @@ const translationData = new Map() //
   .set(`es-ES`, { data: spanish, name: `Spanish` })
   .set(`zh-CN`, { data: simplifiedChinese, name: `简体中文` })
   .set(`ko-KR`, { data: korean, name: `한국어` })
+  .set(`pt-PT`, { data: portuguese, name: `Português` })
 
 export default translationData
